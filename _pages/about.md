@@ -2,33 +2,23 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: false
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p><a href='https://wst.cs.univie.ac.at/'>Workflow Systems and Technology</a></p>
+    <p>Faculty of Computer Science, University of Vienna</p>
+    <p>Nordbergstr. 1, 1090 Vienna, Austria</p>
+    <p>han.van.der.aa [at] univie.ac.at</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
-
-announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
-
-latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+selected_papers: false
+social: true
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a University Professor in Process-Oriented Information Systems at the [Faculty of Computer Science](https://informatik.univie.ac.at/en/) of the [University of Vienna](https://www.univie.ac.at/), since February 2024. Before that, I was a Junior Professor at the [School of Business Informatics and Mathematics](https://www.wim.uni-mannheim.de/en/) of the [University of Mannheim](https://www.uni-mannheim.de/) and an *Alexander von Humboldt Fellow* at the [Humboldt University of Berlin](https://www.hu-berlin.de/) in the [Databases and Information Systems Group](https://www.informatik.hu-berlin.de/en/forschung-en/gebiete/dbis/main-en).
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I received a PhD degree from the Department of Computer Science of the [Vrije Universiteit Amsterdam](http://www.vu.nl/) (in 2018), supervised by [Hajo Reijers](http://www.reijers.com/) and [Henrik Leopold](http://www.henrikleopold.com/), and an MSc degree in Business Information Systems (2013) as well as a BSc degree in Industrial Engineering (2010) from the [Eindhoven University of Technology](http://www.tue.nl/).
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+My research focuses on the development of automated methods for the analysis and improvement of organizational processes. Among others, my work has been published at the international conferences on Business Process Management (BPM), Advanced Information Systems Engineering (CAiSE), Process Mining (ICPM), Management of Data (SIGMOD), and Data Engineering (IEEE ICDE), as well as in journals such as IEEE Transactions on Knowledge and Data Engineering, IEEE Transactions on Software Engineering, Decision Support Systems, and Information Systems.

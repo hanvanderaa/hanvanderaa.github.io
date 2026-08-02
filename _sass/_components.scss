@@ -286,3 +286,39 @@ ul.task-list input[type="checkbox"] {
 .d2h-diff-table {
   position: relative;
 }
+
+// Navbar "links" dropdown: tighter box, icons before labels, hover-to-open
+// on devices that support real hovering (touch devices keep the existing
+// click-to-toggle JS behavior).
+
+.dropdown-menu {
+  min-width: 10rem;
+  padding: 0.25rem;
+  margin-top: 0;
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  padding: 0.4rem 0.7rem;
+  font-size: 0.9rem;
+  white-space: nowrap;
+
+  i {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: 0.5rem;
+    font-size: 0.95rem;
+    text-align: center;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .navbar .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}

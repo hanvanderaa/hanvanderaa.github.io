@@ -14,7 +14,7 @@ profile:
     <p>han.van.der.aa [at] univie.ac.at</p>
 
 selected_papers: false
-social: true
+social: false
 ---
 
 I am a University Professor in Process-Oriented Information Systems at the [Faculty of Computer Science](https://informatik.univie.ac.at/en/) of the [University of Vienna](https://www.univie.ac.at/), since February 2024. Before that, I was a Junior Professor at the [School of Business Informatics and Mathematics](https://www.wim.uni-mannheim.de/en/) of the [University of Mannheim](https://www.uni-mannheim.de/) and an *Alexander von Humboldt Fellow* at the [Humboldt University of Berlin](https://www.hu-berlin.de/) in the [Databases and Information Systems Group](https://www.informatik.hu-berlin.de/en/forschung-en/gebiete/dbis/main-en).

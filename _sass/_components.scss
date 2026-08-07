@@ -82,13 +82,38 @@ ul.task-list input[type="checkbox"] {
 
 // Profile
 
+.about-flex {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+
+  .about-text {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+}
+
+.about-flex-left {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 576px) {
+  .about-flex {
+    flex-direction: column;
+  }
+}
+
 .profile {
   width: 100%;
+  flex: 0 0 auto;
+  padding: 1.25rem;
+  background-color: var(--global-card-bg-color);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0.25rem;
 
   .more-info {
     margin-bottom: 5px;
     margin-top: 5px;
-    font-family: monospace;
 
     p {
       display: inline-block;
@@ -97,17 +122,9 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
-.profile.float-right {
-  margin-left: 1rem;
-}
-
-.profile.float-left {
-  margin-right: 1rem;
-}
-
 @media (min-width: 576px) {
   .profile {
-    width: 30%;
+    width: 260px;
 
     .address {
       p {

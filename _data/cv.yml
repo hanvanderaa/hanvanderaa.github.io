@@ -37,13 +37,13 @@ cv:
         logo: /assets/img/cv_logos/tue.png
 
     Experience:
-      - position: Professor of Computer Science (Process-Oriented Information Systems)
+      - position: Full Professor
         company: Faculty of Computer Science<br>University of Vienna, Austria
         start_date: "2024-02"
         logo: /assets/img/cv_logos/univie.png
 
       - position: Junior Professor
-        company: Institute of Computer Science and Business Informatics<br>University of Mannheim, Germany
+        company: School of Business Informatics and Mathematics<br>University of Mannheim, Germany
         start_date: "2020-04"
         end_date: "2024-01"
         logo: /assets/img/cv_logos/mannheim.png

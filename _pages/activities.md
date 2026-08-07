@@ -1,7 +1,7 @@
 ---
 layout: page
-title: professional activities
-display_title: Professional Activities
+title: scientific service
+display_title: Scientific Service
 permalink: /activities/
 nav: true
 nav_order: 2

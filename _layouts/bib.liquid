@@ -62,6 +62,10 @@
         {% endif %}
       {% elsif entry.doi %}
         {% assign pub_link = entry.doi | prepend: 'https://doi.org/' %}
+      {% elsif entry.ais_url %}
+        {% assign pub_link = entry.ais_url %}
+      {% elsif entry.ceur_url %}
+        {% assign pub_link = entry.ceur_url %}
       {% elsif entry.html %}
         {% if entry.html contains '://' %}
           {% assign pub_link = entry.html %}
@@ -125,7 +129,7 @@
     {% endif %}
    </div>
 
-    {% if entry.pdf or entry.doi or entry.bibtex_show %}
+    {% if entry.pdf or entry.doi or entry.ais_url or entry.ceur_url or entry.bibtex_show %}
       <div class="links">
         {% if entry.pdf %}
           {% if entry.pdf contains '://' %}
@@ -136,6 +140,12 @@
         {% endif %}
         {% if entry.doi %}
           <a href="https://doi.org/{{ entry.doi }}" class="btn btn-sm z-depth-0" role="button">DOI</a>
+        {% endif %}
+        {% if entry.ais_url %}
+          <a href="{{ entry.ais_url }}" class="btn btn-sm z-depth-0" role="button">AIS</a>
+        {% endif %}
+        {% if entry.ceur_url %}
+          <a href="{{ entry.ceur_url }}" class="btn btn-sm z-depth-0" role="button">CEUR</a>
         {% endif %}
         {% if entry.bibtex_show %}
           <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>

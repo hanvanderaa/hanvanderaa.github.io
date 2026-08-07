@@ -1,6 +1,5 @@
 cv:
   name: Han van der Aa
-  label: University Professor of Process-Oriented Information Systems
   email: han.van.der.aa@univie.ac.at
   location: Vienna, Austria
   image: ""
@@ -11,18 +10,61 @@ cv:
       username: hanvanderaa
 
   address:
-    street: ""
-    city: ""
+    street: Nordbergstr. 1
+    city: Vienna
     region: ""
-    postalCode: ""
+    postalCode: "1090"
     countryCode: AT
 
   sections:
     Education:
-      []
+      - institution: Vrije Universiteit Amsterdam, the Netherlands
+        studyType: Ph.D. in Computer Science <em>(cum laude)</em>
+        start_date: "2014-05"
+        end_date: "2018-01"
+        logo: /assets/img/cv_logos/vu.png
+
+      - institution: Eindhoven University of Technology, the Netherlands
+        studyType: M.Sc. in Business Information Systems <em>(cum laude)</em>
+        start_date: "2010-09"
+        end_date: "2013-04"
+        logo: /assets/img/cv_logos/tue.png
+
+      - institution: Eindhoven University of Technology, the Netherlands
+        studyType: B.Sc. in Industrial Engineering <em>(cum laude)</em>
+        start_date: "2007-09"
+        end_date: "2010-07"
+        logo: /assets/img/cv_logos/tue.png
 
     Experience:
-      []
+      - position: Professor of Computer Science (Process-Oriented Information Systems)
+        company: Faculty of Computer Science<br>University of Vienna, Austria
+        start_date: "2024-02"
+        logo: /assets/img/cv_logos/univie.png
+
+      - position: Junior Professor
+        company: Institute of Computer Science and Business Informatics<br>University of Mannheim, Germany
+        start_date: "2020-04"
+        end_date: "2024-01"
+        logo: /assets/img/cv_logos/mannheim.png
+
+      - position: Alexander von Humboldt Fellow (Post-doctoral Researcher)
+        company: Databases & Information Systems Group, Department of Computer Science<br>Humboldt-Universität zu Berlin, Germany
+        start_date: "2018-05"
+        end_date: "2020-03"
+        logo: /assets/img/cv_logos/huberlin.png
+
+      - position: Post-doctoral Researcher
+        company: Business Informatics Group, Department of Computer Sciences<br>Vrije Universiteit Amsterdam, the Netherlands
+        start_date: "2018-01"
+        end_date: "2018-04"
+        logo: /assets/img/cv_logos/vu.png
+
+      - position: Ph.D. Candidate
+        company: Business Informatics Group, Department of Computer Sciences<br>Vrije Universiteit Amsterdam, the Netherlands
+        start_date: "2014-05"
+        end_date: "2018-01"
+        logo: /assets/img/cv_logos/vu.png
 
     Volunteer:
       []

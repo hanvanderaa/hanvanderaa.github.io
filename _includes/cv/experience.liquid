@@ -1,0 +1,69 @@
+{% comment %}
+  Simplified work/experience entry renderer (site override): plain-text,
+  vertically centered year range instead of a badge + location icon.
+  Handles both:
+  - RenderCV: company, position, start_date, end_date, summary, highlights
+  - JSONResume: name, position, startDate, endDate, summary, highlights
+{% endcomment %}
+
+<ul class="card-text font-weight-light list-group list-group-flush">
+  {% for entry in entries %}
+    <li class="list-group-item">
+      <div class="cv-entry">
+        <div class="cv-entry-date">
+          {% capture start_date %}{% if entry.start_date %}{{ entry.start_date }}{% elsif entry.startDate %}{{ entry.startDate }}{% endif %}{% endcapture %}
+          {% assign start_date = start_date | strip %}
+          {% capture end_date %}{% if entry.end_date %}{{ entry.end_date }}{% elsif entry.endDate %}{{ entry.endDate }}{% endif %}{% endcapture %}
+          {% assign end_date = end_date | strip %}
+
+          {% if start_date != '' %}
+            {% assign startDate = start_date | split: '-' | first %}
+            {% assign endDate = end_date | split: '-' | first | default: 'Present' %}
+            {{- startDate }} - {{ endDate -}}
+          {% endif %}
+        </div>
+        <div class="cv-entry-body">
+          {% capture position_title %}
+            {% if entry.position %}{{ entry.position }}{% endif %}
+          {% endcapture %}
+
+          {% if entry.url %}
+            <h6 class="title font-weight-bold">
+              <a href="{{ entry.url }}">{{ position_title }}</a>
+            </h6>
+          {% elsif position_title != '' %}
+            <h6 class="title font-weight-bold">{{ position_title }}</h6>
+          {% endif %}
+
+          {% capture company_name %}
+            {% if entry.name %}{{ entry.name }}{% elsif entry.company %}{{ entry.company }}{% elsif entry.organization %}{{ entry.organization }}{% endif %}
+          {% endcapture %}
+          {% if company_name != '' %}
+            <h6 style="font-size: 0.95rem">{{ company_name }}</h6>
+          {% endif %}
+
+          {% if entry.summary %}
+            <h6 style="font-size: 0.95rem; font-style: italic">
+              {{ entry.summary | markdownify | remove: '<p>' | remove: '</p>' }}
+            </h6>
+          {% endif %}
+
+          {% if entry.highlights %}
+            <ul class="items">
+              {% for item in entry.highlights %}
+                <li>
+                  <span class="item">{{ item | markdownify | remove: '<p>' | remove: '</p>' }}</span>
+                </li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </div>
+        {% if entry.logo %}
+          <div class="cv-entry-logo">
+            <img src="{{ entry.logo | relative_url }}" alt="" loading="lazy">
+          </div>
+        {% endif %}
+      </div>
+    </li>
+  {% endfor %}
+</ul>

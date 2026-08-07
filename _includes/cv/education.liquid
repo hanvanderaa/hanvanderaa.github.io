@@ -1,0 +1,69 @@
+{% comment %}
+  Simplified education entry renderer (site override): plain-text,
+  vertically centered year range instead of a badge + location icon.
+  Handles both:
+  - RenderCV: institution, area, studyType (or degree), start_date, end_date, courses, highlights
+  - JSONResume: institution, area, studyType, startDate, endDate, courses, highlights
+{% endcomment %}
+
+<ul class="card-text font-weight-light list-group list-group-flush">
+  {% for entry in entries %}
+    <li class="list-group-item">
+      <div class="cv-entry">
+        <div class="cv-entry-date">
+          {% capture start_date %}{% if entry.start_date %}{{ entry.start_date }}{% elsif entry.startDate %}{{ entry.startDate }}{% endif %}{% endcapture %}
+          {% assign start_date = start_date | strip %}
+          {% capture end_date %}{% if entry.end_date %}{{ entry.end_date }}{% elsif entry.endDate %}{{ entry.endDate }}{% endif %}{% endcapture %}
+          {% assign end_date = end_date | strip %}
+
+          {% if start_date != '' %}
+            {% assign startDate = start_date | split: '-' | first %}
+            {% assign endDate = end_date | split: '-' | first | default: 'Present' %}
+            {{- startDate }} - {{ endDate -}}
+          {% endif %}
+        </div>
+        <div class="cv-entry-body">
+          {% capture study_type %}
+            {% if entry.studyType %}{{ entry.studyType }}{% elsif entry.degree %}{{ entry.degree }}{% endif %}
+          {% endcapture %}
+
+          {% if entry.url %}
+            <h6 class="title font-weight-bold">
+              <a href="{{ entry.url }}">{{ study_type }}</a>
+            </h6>
+          {% elsif study_type != '' %}
+            <h6 class="title font-weight-bold">{{ study_type }}</h6>
+          {% endif %}
+
+          {% if entry.institution %}
+            <h6 style="font-size: 0.95rem">{{ entry.institution }}</h6>
+          {% endif %}
+
+          {% if entry.area %}
+            <h6 style="font-size: 0.95rem; font-style: italic">{{ entry.area }}</h6>
+          {% endif %}
+
+          {% if entry.courses or entry.highlights %}
+            <ul class="items">
+              {% for item in entry.courses %}
+                <li>
+                  <span class="item">{{ item }}</span>
+                </li>
+              {% endfor %}
+              {% for item in entry.highlights %}
+                <li>
+                  <span class="item">{{ item | markdownify | remove: '<p>' | remove: '</p>' }}</span>
+                </li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </div>
+        {% if entry.logo %}
+          <div class="cv-entry-logo">
+            <img src="{{ entry.logo | relative_url }}" alt="" loading="lazy">
+          </div>
+        {% endif %}
+      </div>
+    </li>
+  {% endfor %}
+</ul>

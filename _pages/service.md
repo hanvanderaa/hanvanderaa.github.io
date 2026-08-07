@@ -46,9 +46,9 @@ nav_order: 2
 
 - Guest Editor, Process Science — Best Process Science Conference Papers 2026 (in progress)
 - Guest Editor, Process Science — [Best Process Science Conference Papers 2025](https://link.springer.com/collections/fcbfjejcab)
-- Special issue editor, Software and Systems Modeling — [Special Issue of selected papers of the BPMDS Working Conference 2024](https://link.springer.com/article/10.1007/s10270-025-01347-5)
-- Special issue editor, Business & Information Systems Engineering — [Special Issue on Exploring the (Mis)Match Between Real-World Processes and Event Data](https://link.springer.com/article/10.1007/s12599-025-00939-1#article-info), 2025
-- Special issue editor, Software and Systems Modeling — [Special Issue of selected papers of the BPMDS Working Conference 2023](https://link.springer.com/article/10.1007/s10270-024-01248-z)
+- Guest Editor, Software and Systems Modeling — [Special Issue of selected papers of the BPMDS Working Conference 2024](https://link.springer.com/article/10.1007/s10270-025-01347-5)
+- Guest Editor, Business & Information Systems Engineering — [Special Issue on Exploring the (Mis)Match Between Real-World Processes and Event Data](https://link.springer.com/article/10.1007/s12599-025-00939-1#article-info), 2025
+- Guest Editor, Software and Systems Modeling — [Special Issue of selected papers of the BPMDS Working Conference 2023](https://link.springer.com/article/10.1007/s10270-024-01248-z)
 
 ## Reviews
 

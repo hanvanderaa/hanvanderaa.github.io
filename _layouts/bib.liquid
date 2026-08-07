@@ -90,11 +90,7 @@
       {% assign thesis = 'thesis,mastersthesis,phdthesis' | split: ',' %}
       {% assign edited = 'book,proceedings' | split: ',' %}
       {% if entry.type == 'article' %}
-        {% if entry.journal_display %}
-          {% capture entrytype %}<em>{{ entry.journal_display }}</em>{% endcapture %}
-        {% else %}
-          {% capture entrytype %}<em>{{ entry.journal }}</em>{% endcapture %}
-        {% endif %}
+        {% capture entrytype %}<em>{{ entry.journal }}</em>{% endcapture %}
       {% elsif proceedings contains entry.type %}
         {% capture entrytype %}{{ entry.booktitle }}{% endcapture %}
       {% elsif thesis contains entry.type %}

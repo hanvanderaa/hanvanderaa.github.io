@@ -372,3 +372,11 @@ ul.task-list input[type="checkbox"] {
     display: block;
   }
 }
+
+// Self-name underline, matching the .author > em treatment used for the
+// site owner's name in the publications list (see _sass/_publications.scss),
+// for use outside that specific markup structure (e.g. distinctions.md).
+.self-name {
+  border-bottom: 1px solid;
+  font-style: normal;
+}

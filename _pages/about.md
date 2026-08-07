@@ -8,10 +8,10 @@ profile:
   image: prof_pic.jpg
   image_circular: false
   more_info: >
-    <p><a href='https://wst.cs.univie.ac.at/'>Workflow Systems and Technology</a></p>
-    <p>Faculty of Computer Science, University of Vienna</p>
-    <p>Nordbergstr. 1, 1090 Vienna, Austria</p>
-    <p>han.van.der.aa [at] univie.ac.at</p>
+    <a href='https://wst.cs.univie.ac.at/'>Workflow Systems and Technology</a><br>
+    Faculty of Computer Science, University of Vienna<br>
+    Nordbergstr. 1, 1090 Vienna, Austria<br>
+    han.van.der.aa [at] univie.ac.at
 
 selected_papers: false
 social: false

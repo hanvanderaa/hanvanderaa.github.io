@@ -95,7 +95,7 @@ nav_order: 2
 
 ## Tutorials
 
-- IEEE Int. Conf. on Data Engineering (Utrecht, The Netherlands): *Privacy-Aware Analysis based on Data Series*, June 2024
-- Int. Conf. on Business Process Management (Utrecht, The Netherlands): *Natural Language Processing for Business Process Analysis*, September 2023
-- Int. Conf. on Business Process Management (Rome, Italy): *RuM: Declarative Process Mining, Distilled*, September 2021
-- IEEE Big Data (Los Angeles, USA): *Process Mining: Leveraging Event Data to Understand and Improve Organizations*, December 2019
+- IEEE Int. Conf. on Data Engineering (Utrecht, The Netherlands): _Privacy-Aware Analysis based on Data Series_, June 2024
+- Int. Conf. on Business Process Management (Utrecht, The Netherlands): _Natural Language Processing for Business Process Analysis_, September 2023
+- Int. Conf. on Business Process Management (Rome, Italy): _RuM: Declarative Process Mining, Distilled_, September 2021
+- IEEE Big Data (Los Angeles, USA): _Process Mining: Leveraging Event Data to Understand and Improve Organizations_, December 2019

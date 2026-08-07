@@ -66,29 +66,20 @@ cv:
         end_date: "2018-01"
         logo: /assets/img/cv_logos/vu.png
 
-    Volunteer:
-      []
+    Volunteer: []
 
-    Awards:
-      []
+    Awards: []
 
-    Publications:
-      []
+    Publications: []
 
-    Skills:
-      []
+    Skills: []
 
-    Languages:
-      []
+    Languages: []
 
-    Interests:
-      []
+    Interests: []
 
-    Certificates:
-      []
+    Certificates: []
 
-    Projects:
-      []
+    Projects: []
 
-    References:
-      []
+    References: []

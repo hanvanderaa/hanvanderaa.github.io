@@ -1,10 +1,13 @@
 /*******************************************************************************
  * Publication and bibliography styles
  *
- * Local override of al_folio_core's _sass/_publications.scss: numbered flat
- * list (no year grouping - see _config.yml scholar.group_by: none), tight
- * entry spacing, and PDF/DOI/Bib buttons in a column vertically centered
- * beside each entry instead of on the venue line.
+ * Local override of al_folio_core's _sass/_publications.scss: numbered list
+ * (numbering continues across year sub-groups via a CSS counter reset per
+ * category, not per <ol>), year sub-groups on select categories only (see
+ * the -g year flag on the bibliography tag calls in _pages/publications.md)
+ * with a compact rule-plus-year divider instead of a full heading between
+ * years, tight entry spacing, and PDF/DOI/Bib buttons in a column vertically
+ * centered beside each entry instead of on the venue line.
  ******************************************************************************/
 
 @use "variables" as v;
@@ -28,14 +31,56 @@
     }
   }
 
+  // Reset the entry counter at each category heading, not at each year
+  // divider, so numbering continues across year sub-groups within a
+  // category instead of restarting at 1 for every year.
+  h2:not(.bibliography) {
+    counter-reset: pub-counter;
+  }
+
+  // Compact year divider inserted between grouped years within a category
+  // (scholar.group_by: year): a thin rule with the year at its end, instead
+  // of a full heading, to avoid extra vertical space.
+  h2.bibliography {
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem;
+    margin: 1.25rem 0 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--global-text-color-light);
+
+    &::before {
+      content: "";
+      flex: 1 1 auto;
+      align-self: center;
+      height: 1px;
+      background-color: var(--global-divider-color);
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
   ol.bibliography {
-    list-style: decimal;
+    list-style: none;
     padding-left: 1.5rem;
     margin-top: 0;
 
     li {
+      counter-increment: pub-counter;
+      position: relative;
       margin-bottom: 0.5rem;
       padding-left: 0.25rem;
+
+      &::before {
+        content: counter(pub-counter) ".";
+        position: absolute;
+        left: -1.5rem;
+        width: 1.25rem;
+        text-align: right;
+      }
 
       .entry-flex {
         display: flex;

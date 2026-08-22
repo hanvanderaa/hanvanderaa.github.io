@@ -34,13 +34,13 @@ nav_order: 1
 <div class="publications">
 
 <h2 id="conference-papers">Conference Papers</h2>
-{% bibliography -q @*[category=conference] %}
+{% bibliography -q @*[category=conference] -g year %}
 
 <h2 id="journal-articles">Journal Articles</h2>
-{% bibliography -q @*[category=journal] %}
+{% bibliography -q @*[category=journal] -g year %}
 
 <h2 id="workshop-forum-and-demo-papers">Workshop, Forum, and Demo Papers</h2>
-{% bibliography -q @*[category=workshop] %}
+{% bibliography -q @*[category=workshop] -g year %}
 
 <h2 id="edited-proceedings">Edited Proceedings</h2>
 {% bibliography -q @*[category=proceedings] %}

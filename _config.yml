@@ -361,6 +361,7 @@ scholar:
 
   query: "@*"
   group_by: none
+  group_order: descending
   sort_by: year
   order: descending
 

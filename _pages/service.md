@@ -2,9 +2,13 @@
 layout: page
 title: scientific service
 display_title: Scientific Service
-permalink: /activities/
+permalink: /service/
 nav: true
 nav_order: 2
+_styles: >
+  .post article h4 {
+    font-size: 1.1rem;
+  }
 ---
 
 [Organization](#organization) &middot; [Program Committees](#program-committees-conferences) &middot; [Editor for Journals](#editor-for-journals) &middot; [Reviews](#reviews) &middot; [Tutorials](#tutorials)

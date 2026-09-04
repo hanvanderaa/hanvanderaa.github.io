@@ -118,6 +118,7 @@
                     {% if cv.address.city %}{{ cv.address.city }}, {% endif %}
                     {% if cv.address.region %}{{ cv.address.region }} {% endif %}
                     {% if cv.address.postalCode %}{{ cv.address.postalCode }}{% endif %}
+                    {% if cv.address.country %}, {{ cv.address.country }}{% endif %}
                   </td>
                 </tr>
               {% endif %}

@@ -14,6 +14,7 @@ cv:
     city: Vienna
     region: ""
     postalCode: "1090"
+    country: Austria
     countryCode: AT
 
   sections:
@@ -52,7 +53,7 @@ cv:
         company: Databases & Information Systems Group, Department of Computer Science<br>Humboldt-Universität zu Berlin, Germany
         start_date: "2018-05"
         end_date: "2020-03"
-        logo: /assets/img/cv_logos/huberlin.png
+        logo: /assets/img/cv_logos/Huberlin-logo.svg
 
       - position: Post-doctoral Researcher
         company: Business Informatics Group, Department of Computer Sciences<br>Vrije Universiteit Amsterdam, the Netherlands

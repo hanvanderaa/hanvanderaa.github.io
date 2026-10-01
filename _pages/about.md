@@ -10,10 +10,14 @@ profile:
   image_circular: false
   more_info: >
     <strong>Prof. Dr. Han van der Aa</strong><br>
-    <a href='https://wst.cs.univie.ac.at/'>Workflow Systems and Technology</a><br>
+    <span class="info-label">Address</span>
     Faculty of Computer Science, University of Vienna<br>
-    Nordbergstr. 1, 1090 Vienna, Austria<br>
-    <a href="mailto:han.van.der.aa@univie.ac.at">han.van.der.aa@univie.ac.at</a>
+    Nordbergstr. 1, Room O5.040, 1090 Vienna, Austria<br>
+    <span class="info-label">Contact</span>
+    <a href="mailto:han.van.der.aa@univie.ac.at">han.van.der.aa@univie.ac.at</a><br>
+    <span class="info-label">Working with me</span>
+    Interested in joining my group or collaborating?<br>
+    <a href="/working-with-me/">Read this first</a>.
 
 selected_papers: false
 social: false

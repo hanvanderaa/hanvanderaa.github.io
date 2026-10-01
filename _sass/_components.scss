@@ -119,6 +119,16 @@ ul.task-list input[type="checkbox"] {
       display: inline-block;
       margin: 0;
     }
+
+    .info-label {
+      display: block;
+      margin-top: 0.6rem;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--global-text-color-light);
+    }
   }
 }
 

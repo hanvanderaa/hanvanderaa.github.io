@@ -17,7 +17,7 @@ profile:
     <a href="mailto:han.van.der.aa@univie.ac.at">han.van.der.aa@univie.ac.at</a><br>
     <span class="info-label">Working with me</span>
     Interested in joining my group or collaborating?<br>
-    <a href="/working-with-me/">Read this first</a>.
+    <a href="/working-with-me/">Please read this first</a>.
 
 selected_papers: false
 social: false

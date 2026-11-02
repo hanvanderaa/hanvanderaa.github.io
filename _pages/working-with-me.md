@@ -3,7 +3,8 @@ layout: page
 title: working with me
 display_title: Working with Me
 permalink: /working-with-me/
-nav: false
+nav: true
+nav_order: 6
 ---
 
 I am always happy to hear from students, researchers, and organizations who share an interest in process mining and related topics. Below you can find how best to reach out, depending on what you have in mind.

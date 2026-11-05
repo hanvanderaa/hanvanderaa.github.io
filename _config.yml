@@ -356,8 +356,13 @@ scholar:
   replace_strings: true
   join_strings: true
 
-  details_dir: bibliography
-  details_link: Details
+  # One page per paper at /publications/<citekey>/ (colons in the citekey become
+  # underscores), rendered with _layouts/paper.html. The number and title of each
+  # list entry link to it (see _layouts/bib.liquid), so no extra "Details" link.
+  details_dir: publications
+  details_layout: paper.html
+  details_permalink: /:details_dir/:key:extension
+  details_link: false
 
   query: "@*"
   group_by: none
@@ -379,6 +384,7 @@ filtered_bibtex_keywords:
     abbr,
     abstract,
     additional_info,
+    ais_url,
     altmetric,
     annotation,
     arxiv,
@@ -386,6 +392,8 @@ filtered_bibtex_keywords:
     award_name,
     bibtex_show,
     blog,
+    category,
+    ceur_url,
     code,
     dimensions,
     eprint,
@@ -400,6 +408,7 @@ filtered_bibtex_keywords:
     selected,
     slides,
     supp,
+    venue,
     video,
     website,
   ]

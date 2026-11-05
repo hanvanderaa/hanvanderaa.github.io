@@ -1,0 +1,34 @@
+{% comment %}
+  Venue line of a bibliography entry ("<booktitle>, <year>", or the entry's
+  venue field verbatim), shared by the publications list (_layouts/bib.liquid)
+  and the per-paper page (_layouts/paper.html). Pass the entry as entry=.
+{% endcomment %}
+{% if include.entry.venue %}
+  {% capture periodical %}{{ include.entry.venue }}{% endcapture %}
+{% else %}
+  {% assign proceedings = 'inproceedings,incollection' | split: ',' %}
+  {% assign thesis = 'thesis,mastersthesis,phdthesis' | split: ',' %}
+  {% assign edited = 'book,proceedings' | split: ',' %}
+  {% if include.entry.type == 'article' %}
+    {% capture entrytype %}<em>{{ include.entry.journal }}</em>{% endcapture %}
+  {% elsif proceedings contains include.entry.type %}
+    {% capture entrytype %}{{ include.entry.booktitle }}{% endcapture %}
+  {% elsif thesis contains include.entry.type %}
+    {% capture entrytype %}{{ include.entry.school }}{% endcapture %}
+  {% elsif edited contains include.entry.type %}
+    {% capture entrytype %}{{ include.entry.publisher }}{% endcapture %}
+  {% else %}
+    {% capture entrytype %}{% endcapture %}
+  {% endif %}
+  {% assign entrymonth = '' %}
+  {% if include.entry.month %}
+    {% capture entrymonth %}{{ include.entry.month | capitalize }}{{ " " }}{% endcapture %}
+  {% endif %}
+  {% assign entryyear = '' %}
+  {% if include.entry.year %}
+    {% capture entryyear %}{{ include.entry.year }}{% endcapture %}
+  {% endif %}
+  {% assign entrytype_text = entrytype | strip_html | strip %}
+  {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}, {% endif %}{{ entrymonth }}{{ entryyear }}{% endcapture %}
+{% endif %}
+{{ periodical | strip }}

@@ -74,12 +74,30 @@
       margin-bottom: 0.5rem;
       padding-left: 0.25rem;
 
-      &::before {
-        content: counter(pub-counter) ".";
+      // The entry number is an empty link in each entry (_layouts/bib.liquid)
+      // that draws the counter and points to the paper's page. The wrappers
+      // are kept unpositioned so it is placed against the <li>.
+      .row,
+      .entry-flex {
+        position: static;
+      }
+
+      a.pub-number {
         position: absolute;
+        top: 0;
         left: -1.5rem;
         width: 1.25rem;
         text-align: right;
+        color: var(--global-text-color);
+
+        &::before {
+          content: counter(pub-counter) ".";
+        }
+
+        &:hover {
+          color: var(--global-theme-color);
+          text-decoration: none;
+        }
       }
 
       .entry-flex {
@@ -246,4 +264,125 @@
 .citation,
 .citation-number {
   color: var(--global-theme-color);
+}
+
+// Per-paper page (_layouts/paper.html), one per bibliography entry.
+.paper-detail {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding-top: 1.5rem;
+
+  .paper-back {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    color: var(--global-text-color-light);
+
+    &:hover {
+      color: var(--global-theme-color);
+      text-decoration: none;
+    }
+  }
+
+  .paper-category {
+    display: inline-block;
+    margin-bottom: 0.75rem;
+    padding: 0.1rem 0.5rem;
+    border: 1px solid var(--global-theme-color);
+    border-radius: 3px;
+    color: var(--global-theme-color);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .paper-title {
+    margin: 0 0 1rem;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.25;
+  }
+
+  .paper-authors {
+    margin-bottom: 0.25rem;
+    font-size: 1.05rem;
+
+    em {
+      font-style: normal;
+      font-weight: 700;
+      border-bottom: 1px solid;
+    }
+  }
+
+  .paper-venue {
+    color: var(--global-text-color-light);
+  }
+
+  .paper-links,
+  .paper-share {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .btn {
+    color: var(--global-text-color);
+    background: transparent;
+    border: 1px solid var(--global-text-color);
+    padding: 0.2rem 0.75rem;
+    font-size: 0.85rem;
+    margin: 0;
+
+    &:hover {
+      color: var(--global-theme-color);
+      border-color: var(--global-theme-color);
+      text-decoration: none;
+    }
+  }
+
+  .paper-section {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--global-divider-color);
+
+    h2 {
+      margin-bottom: 0.75rem;
+      font-size: 1.25rem;
+      color: var(--global-theme-color);
+    }
+  }
+
+  .paper-abstract {
+    line-height: 1.7;
+  }
+
+  .paper-bibtex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin-top: 1rem;
+
+    figure {
+      align-self: stretch;
+    }
+
+    pre {
+      font-size: 0.8rem;
+    }
+  }
+
+  .paper-share input {
+    flex: 1 1 20rem;
+    min-width: 0;
+    padding: 0.25rem 0.5rem;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 3px;
+    background: var(--global-bg-color);
+    color: var(--global-text-color);
+    font-family: monospace;
+    font-size: 0.85rem;
+  }
 }

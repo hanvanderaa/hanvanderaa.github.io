@@ -10,7 +10,7 @@ nav_order: 1
 <!-- _pages/publications.md -->
 
 <div class="pub-nav" markdown="1">
-[Conference Papers](#conference-papers) &middot; [Journal Articles](#journal-articles) &middot; [Workshop, Forum, and Demo Papers](#workshop-forum-and-demo-papers) &middot; [Edited Proceedings](#edited-proceedings) &middot; [Book Chapters](#book-chapters) &middot; [Invited Articles](#invited-articles) &middot; [Book](#book) &middot; [Theses](#theses)
+[Conference Papers](#conference-papers) &middot; [Journal Articles](#journal-articles) &middot; [Workshop, Forum, and Demo Papers](#workshop-forum-and-demo-papers) &middot; [Edited Proceedings](#edited-proceedings) &middot; [Book Chapters](#book-chapters) &middot; [Invited Articles](#invited-articles) &middot; [Book](#book) &middot; [Theses](#theses) &middot; [Distinctions](#distinctions)
 </div>
 
 <!-- Bibsearch Feature -->
@@ -56,5 +56,21 @@ nav_order: 1
 
 <h2 id="theses">Theses</h2>
 {% bibliography -q @*[category=thesis] %}
+
+</div>
+
+<!-- Paper awards come from the hidden "award" field in _bibliography/papers.bib -->
+<div class="distinctions">
+
+<h2 id="distinctions">Distinctions</h2>
+
+<h3>Paper awards</h3>
+{% bibliography -q @*[award] -T award_item -h ul %}
+
+<h3>Other awards</h3>
+<ul>
+  <li><strong>Best reviewer award (ICPM 2023):</strong> Best reviewer at the International Conference on Process Mining</li>
+  <li><strong>Runner-up best dissertation award (BPM 2018)</strong></li>
+</ul>
 
 </div>

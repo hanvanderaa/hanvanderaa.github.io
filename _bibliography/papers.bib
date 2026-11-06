@@ -27,6 +27,7 @@
   series   = {Lecture Notes in Computer Science},
   doi      = {10.1007/978-3-032-37777-7\_26},
   pdf      = {bpm-2026-kirchdorfer-from.pdf},
+  abstract = {Efficient resource allocation is a key challenge in business process management, with direct implications for cost, throughput time, and utilization. While recent Reinforcement Learning (RL) approaches have shown promise in deriving adaptive allocation policies, they typically neglect inter-resource collaboration patterns that can strongly influence real-world task handovers. Recognizing this, this paper introduces the first approach for multi-objective optimization of resource-level decision-making, enabling the recommendation of person-specific handover policies. To achieve this, our work combines an existing Multi-Agent System-based process simulator with a multi-objective evolutionary algorithm. The resulting approach produces Pareto-optimal, resource-specific policies that optimize the process across multiple objectives. Experimental results on synthetic and real-world datasets show that our approach reduces costs by an average of 37\% and waiting time by 58\%, consistently outperforming heuristic baselines and demonstrating the potential of leveraging collaboration-aware optimization to improve process performance.},
   bibtex_show={true},
   category = {conference}
 }
@@ -40,6 +41,7 @@
   year     = {2026},
   doi      = {10.1016/J.IS.2025.102584},
   pdf      = {infsyst-2026-kraus-comprehensive.pdf},
+  abstract = {Business processes are subject to changes due to the dynamic environments in which they are executed. These process changes can lead to concept drifts, which are situations when the characteristics of a business process have undergone significant changes, resulting in event logs that contain data on different versions of a process.he accuracy and usefulness of process mining results derived from such event logs may be compromised because they rely on historical data that no longer reflects the current process behavior, or because the results do not distinguish between different process versions. Therefore, concept drift detection in process mining aims to identify drifts recorded in an event log by detecting when they occurred, localizing process modifications, and characterizing how they manifest over time.his paper focuses on the latter task, i.e., drift characterization, which seeks to understand whether changes unfolded suddenly or gradually and if they form complex patterns like incremental or recurring drifts. However, current solutions for automatically detecting concept drifts from event logs lack comprehensive characterization capabilities. Instead, they mainly focus on drift detection and characterization of isolated process changes. This leads to an incomplete understanding of more complex concept drifts, like incremental and recurring drifts, when several process changes are inter-connected. This paper overcomes such limitations by introducing an improved taxonomy for characterizing concept drifts and a three-step framework that provides an automatic characterization of concept drifts from event logs. We evaluated our framework through elaborate evaluation experiments conducted using a large collection of synthetic event logs. The results highlight the effectiveness and accuracy of our proposed framework and show that it outperforms state-of-the-art techniques.},
   bibtex_show={true},
   category = {journal}
 }
@@ -53,6 +55,7 @@
   year     = {2026},
   doi      = {10.1016/J.IS.2026.102740},
   pdf      = {infsyst-2026-kraus-framework.pdf},
+  abstract = {Steady-state detection (SSD) is a crucial task in the analysis of complex and dynamic systems, as it enables the reliable assessment of system behavior by distinguishing between stable and unstable states. SSD techniques have been extensively studied and applied in various domains, including signal processing and industrial systems. However, their application within the information systems domain, particularly in process mining, has received little attention, even though business processes themselves can be regarded as complex socio-technical systems. In particular, event logs that capture the execution of business processes often contain data from both steady and non-steady states. Mixing up these states can significantly affect the accuracy and reliability of insights from common process mining tasks, such as process performance analysis and process discovery. To address this problem, we propose a dedicated SSD framework for process mining and demonstrate how differentiating between distinct process states can enhance the accuracy and reliability of process mining insights. The SSD framework takes an event log as input and identifies the existing steady and non-steady states along with their corresponding time periods. We evaluate the framework through two experiments: one assessing accuracy using simulated event logs and another demonstrating its impact on three key process mining tasks: process performance analysis, process discovery, and remaining time prediction.},
   bibtex_show={true},
   category = {journal}
 }
@@ -67,6 +70,7 @@
   year     = {2026},
   doi      = {10.1007/S44311-026-00041-Z},
   pdf      = {procsci-2026-kirchdorfer-arrival.pdf},
+  abstract = {Business Process Simulation (BPS) plays a central role in analyzing and improving organizational processes by estimating the effects of potential changes. A key element of any BPS model is the case-arrival component, which determines when new cases enter the process. While accurate arrival time modeling is essential for producing reliable simulations, most existing approaches rely on static inter-arrival time distributions that overlook the temporal dynamics inherent in organizational environments, resulting in reduced accuracy and misleading insights. To address this, we propose Auto Time Kernel Density Estimation (ATKDE), a scalable arrival time modeling approach that captures global trends, weekday effects, and intraday shifts. Across 20 diverse processes, our experiments show that AT-KDE produces more accurate and robust arrival times than existing case-arrival modeling approaches, while maintaining practical execution times. Moreover, we assess how different arrival modeling approaches affect overall simulation quality. Noting that existing BPS evaluation metrics may not explicitly account for process dynamics, we additionally showcase a novel utility-based evaluation framework, which we then use in our experiments.},
   bibtex_show={true},
   category = {journal}
 }
@@ -83,6 +87,7 @@
   series   = {Lecture Notes in Computer Science},
   doi      = {10.1007/978-3-032-28110-4\_4},
   pdf      = {caise-2026-zuniga-version.pdf},
+  abstract = {Business processes constantly evolve as organizations adapt to new regulations, technologies, and market conditions. Consequently, models discovered through process mining quickly lose validity unless process concept drifts are detected and managed. The newest and best drift detection approaches rely on supervised learning or complex statistical models, demanding labeled data and high computational effort. This paper introduces Version Clustering (VC), a novel top-down unsupervised approach for process concept drift detection that is both robust and interpretable. VC’s novelty lies in the inversion of the drift detection logic in comparison to existing approaches. Rather than pinpointing drift points outright, VC first clusters windows into coherent process versions via hierarchical density-based clustering, and then marks drift points where execution transitions between versions. This inversion yields three advantages: (i) improved robustness to noise and local behavioral variability, (ii) more accurate predictions, and (iii) a version-level representation that naturally supports visual and analytical interpretation. Evaluated within a unified experimental framework and tested on established benchmarks, VC achieves high robustness to noise, strong accuracy, practical scalability, coverage of most drift types, and clear interpretability. Under the considered evaluation metrics, it matched or exceeded baseline approaches, offering an efficient and interpretable solution for tracking process evolution in noisy, dynamic environments.},
   bibtex_show={true},
   category = {conference}
 }
@@ -99,6 +104,7 @@
   series   = {Lecture Notes in Computer Science},
   doi      = {10.1007/978-3-032-28117-3\_9},
   pdf      = {caise-2026-neuberger-enabling.pdf},
+  abstract = {In recent years, Large Language Models (LLMs) have received increasing attention for tackling open issues in information systems engineering. A prominent example of this is the extraction of processes from unstructured texts. However, the adoption of LLMs for this task is impeded in many real-world scenarios, due to issues such as hardware limitations, confidential processes, personal information, real-time settings, or concerns about ecological sustainability. In this paper, we, therefore, explore how specialized Small Language Models (SLM) can be used to extract process model information from textual descriptions. We propose a framework for synthesizing distantly supervised training data using LLMs, effectively shifting their use away from online inference toward offline training. We find that SLMs can match the extraction quality of modern LLMs orders of magnitude larger, measured on one of the most popular process model extraction datasets. This makes SLMs promising candidates for implementation in on-premise information systems without the need for prohibitively expensive specialized hardware. We make our approach publicly available.},
   bibtex_show={true},
   category = {conference}
 }
@@ -164,6 +170,7 @@
   year     = {2025},
   doi      = {10.1007/S13218-024-00863-8},
   pdf      = {ki-2025-kampik-large.pdf},
+  abstract = {The continued success of Large Language Models (LLMs) and other generative artificial intelligence approaches highlights the advantages that large information corpora can have over rigidly defined symbolic models, but also serves as a proof-point of the challenges that purely statistics-based approaches have in terms of safety and trustworthiness. As a framework for contextualizing the potential, as well as the limitations of LLMs and other foundation model-based technologies, we propose the concept of a Large Process Model (LPM) that combines the correlation power of LLMs with the analytical precision and reliability of knowledge-based systems and automated reasoning approaches. LPMs are envisioned to directly utilize the wealth of process management experience that experts have accumulated, as well as process performance data of organizations with diverse characteristics, e.g., regarding size, region, or industry. In this vision, the proposed LPM would enable organizations to receive context-specific (tailored) process and other business models, analytical deep-dives, and improvement recommendations. As such, it would allow to substantially decrease the time and effort required for business transformation, while also allowing for deeper, more impactful, and more actionable insights than previously possible. We argue that implementing an LPM is feasible, but also highlight limitations and research challenges that need to be solved to implement particular aspects of the LPM vision.},
   bibtex_show={true},
   category = {journal}
 }
@@ -178,6 +185,7 @@
   year     = {2025},
   doi      = {10.1007/S13218-024-00880-7},
   pdf      = {ki-2025-elyasi-knowledge.pdf},
+  abstract = {Activity recommendation is an approach to assist process modelers by recommending suitable activities to be inserted at a user-defined position. In this paper, we suggest approaching activity recommendation as a knowledge graph completion task. We convert business process models into knowledge graphs through various translation methods and apply embedding- and rule-based knowledge graph completion techniques to the translated models. Our experimental evaluation reveals that generic knowledge graph completion methods do not perform well on the given task. They lack the flexibility to capture complex regularities that can be learned using a rule-based approach specifically designed for activity recommendation.},
   bibtex_show={true},
   category = {journal}
 }
@@ -191,6 +199,7 @@
   year     = {2025},
   doi      = {10.1007/S44311-025-00008-6},
   pdf      = {procsci-2025-franzoi-explaining.pdf},
+  abstract = {Process mining research focuses on analyzing, visualizing, and predicting business process performance. However, the interpretation of process mining results often overlooks the critical role of context, limiting the ability to derive meaningful insights into process dynamics. In this paper, we develop a Process Mining Context Taxonomy that identifies and categorizes contextual factors influencing process mining outcomes across three levels: process-immediate, organization-internal, and organization-external context. Grounded in existing context frameworks and empirical insights from routine dynamics, the taxonomy provides a structured approach for incorporating context into process mining analyses. We demonstrate its applicability through a case study in a financial institution and evaluate its usability in a user study involving process mining experts. Based on these findings, we propose two usage paths to guide process analysts in interpreting process mining results. Our study highlights the need for contextualization in process mining, offers actionable guidance to enhance the interpretability of process mining efforts, and opens up promising avenues for future research.},
   bibtex_show={true},
   category = {journal}
 }
@@ -204,6 +213,7 @@
   year     = {2025},
   doi      = {10.1007/S44311-025-00009-5},
   pdf      = {procsci-2025-kirchdorfer-discovering.pdf},
+  abstract = {Business process simulation (BPS) is a powerful tool for estimating process performance across different scenarios, offering critical support for organizational process redesign and optimization. Traditional BPS approaches predominantly rely on a control-flow-first perspective by enriching a process model with simulation parameters. While these approaches seem suitable for capturing centrally orchestrated processes, such as those managed by workflow systems, they fall short of accurately reflecting real-world processes characterized by decentralized decision-making and distinct resource behaviors. To overcome this limitation, we propose AgentSimulator, a resource-first BPS approach that discovers a multi-agent system from an event log. By modeling the distinct behaviors and interaction patterns of individual resources, AgentSimulator effectively simulates the underlying process. Our approach automatically identifies whether resource behavior is rather orchestrated or autonomous, adapting to the specific decision-making structure of the process. Experimental results reveal that AgentSimulator achieves state-of-the-art simulation accuracy while ensuring high adaptability to various process types.},
   bibtex_show={true},
   category = {journal}
 }
@@ -217,6 +227,7 @@
   year     = {2025},
   doi      = {10.1007/S44311-025-00012-W},
   pdf      = {procsci-2025-kraus-machine.pdf},
+  abstract = {Concept drift in process mining occurs when a single event log includes data from multiple versions of a process, making the detection of such drifts essential for ensuring reliable process mining results. Although many techniques have been proposed, they exhibit limitations in accuracy and scope. Specifically, their accuracy diminishes when facing noise, varying drift types, or different levels of change severity. Additionally, these techniques primarily focus on detecting sudden and gradual drifts, overlooking the automated detection of incremental and recurring drifts. To address these limitations, we present CV4CDD-4D, a novel approach for automated concept drift detection that can identify sudden, gradual, incremental, and recurring drifts. Our approach follows an entirely different paradigm. Specifically, it employs a supervised machine learning model fine-tuned on a large collection of event logs with known concept drifts, enabling the model to learn how drifts manifest in event logs. The possibility to train such a model has recently emerged through a tool that generates event logs with known concept drifts. However, applying supervised machine learning remains challenging due to the complexities of encoding. To address this, we propose converting an event log into an image-based representation that captures process evolution over time, enabling the use of a state-of-the-art computer vision model to detect drifts. Our experiments show that our approach, compared to existing solutions, improves the accuracy and robustness to noise of drift detection while extending coverage to a broader range of drift types, highlighting the potential of this new paradigm.},
   bibtex_show={true},
   category = {journal}
 }
@@ -230,6 +241,7 @@
   year     = {2025},
   doi      = {10.1007/S44311-025-00019-3},
   pdf      = {procsci-2025-rebmann-on.pdf},
+  abstract = {Large language models (LLMs) have shown to be valuable tools for tackling process mining tasks. Existing studies report on their capability to support various data-driven process analyses and even, to some extent, that they are able to reason about how processes work. This reasoning ability suggests that there is potential for LLMs to tackle semantics-aware process mining tasks, which are tasks that rely on an understanding of the meaning of activities and their relationships. Examples of these include process discovery, where the meaning of activities can indicate their dependency, whereas in anomaly detection the meaning can be used to recognize process behavior that is abnormal. In this paper, we systematically explore the capabilities of LLMs for such tasks. Unlike prior work, which largely evaluates LLMs in their default state, we investigate their utility through both in-context learning and supervised fine-tuning. Concretely, we define five process mining tasks requiring semantic understanding and provide extensive benchmarking datasets for evaluation. Our experiments reveal that while LLMs struggle with challenging process mining tasks when used out of the box or with minimal in-context examples, they achieve strong performance when fine-tuned for these tasks across a broad range of process types and industries.},
   bibtex_show={true},
   category = {journal}
 }
@@ -246,6 +258,7 @@
   series   = {Lecture Notes in Business Information Processing},
   doi      = {10.1007/978-3-032-02929-4\_8},
   pdf      = {bpm-2025-ozdemir-rethinking.pdf},
+  abstract = {Business process simulation (BPS) is a key tool for analyzing and optimizing organizational workflows, supporting decision-making by estimating the impact of process changes. The reliability of such estimates depends on the ability of a BPS model to accurately mimic the process under analysis, making rigorous accuracy evaluation essential. However, the state-of-the-art approach to evaluating BPS models has two key limitations. First, it treats simulation as a forecasting problem, testing whether models can predict unseen future events. This fails to assess how well a model captures the as-is process, particularly when process behavior changes from train to test period. Thus, it becomes difficult to determine whether poor results stem from an inaccurate model or the inherent complexity of the data, such as unpredictable drift. Second, the evaluation approach strongly relies on Earth Mover’s Distance-based metrics, which can obscure temporal patterns and thus yield misleading conclusions about simulation quality. To address these issues, we propose a novel framework that evaluates simulation quality based on its ability to generate representative process behavior. Instead of comparing simulated logs to future real-world executions, we evaluate whether predictive process monitoring models trained on simulated data perform comparably to those trained on real data for downstream analysis tasks. Empirical results show that our framework not only helps identify sources of discrepancies but also distinguishes between model accuracy and data complexity, offering a more meaningful way to assess BPS quality.},
   bibtex_show={true},
   category = {workshop}
 }
@@ -262,6 +275,7 @@
   series   = {Lecture Notes in Computer Science},
   doi      = {10.1007/978-3-032-02867-9\_14},
   pdf      = {bpm-2025-elyasi-simple.pdf},
+  abstract = {Business processes are typically supported by information systems that log execution data, enabling the prediction of remaining time for ongoing process instances. Deep learning models are often used for this task due to their accuracy, but they only provide point estimates, without accounting for uncertainty. This limits their reliability, as decision-making often benefits from prediction intervals. Uncertainty quantification techniques can help by estimating both expected values and uncertainty. However, existing techniques are often poorly calibrated, computationally expensive, or not adaptable to different deep learning models. This paper examines these challenges and proposes a simple, efficient solution using Laplace approximation and calibrated regression. Our approach distinguishes between model and data uncertainty, integrates easily with any deep learning model, and can be applied to pre-trained networks. Benchmarking on 10 real-world event logs shows that our method matches state-of-the-art performance while significantly reducing training and inference time. This makes it a strong yet simple baseline for uncertainty-aware remaining time prediction in business processes.},
   bibtex_show={true},
   category = {conference}
 }
@@ -278,6 +292,7 @@
   series   = {Lecture Notes in Computer Science},
   doi      = {10.1007/978-3-032-02867-9\_20},
   pdf      = {bpm-2025-kirchdorfer-divide.pdf},
+  abstract = {Business Process Simulation (BPS) is a critical tool for analyzing and improving organizational processes by estimating the impact of process changes. A key component of BPS is the case-arrival model, which determines the pattern of new case entries into a process. Although accurate case-arrival modeling is essential for reliable simulations—as it influences waiting and overall cycle times—existing approaches often rely on oversimplified static distributions of inter-arrival times. These approaches fail to capture the dynamic and temporal complexities inherent in organizational environments, leading to less accurate and reliable outcomes. To address this limitation, we propose Auto Time Kernel Density Estimation (AT-KDE), a divide-and-conquer approach that models arrival times of processes by incorporating global dynamics, dayof-week variations, and intraday distributional changes, ensuring both precision and scalability. Experiments conducted across 20 diverse processes demonstrate that AT-KDE is far more accurate and robust than existing approaches while maintaining sensible execution time efficiency.},
   bibtex_show={true},
   category = {conference}
 }
@@ -294,6 +309,8 @@
   series   = {Lecture Notes in Computer Science},
   doi      = {10.1007/978-3-031-94569-4\_12},
   pdf      = {caise-2025-kraus-on.pdf},
+  abstract = {Steady-state detection (SSD) is a critical task in the analysis of dynamic systems, as it enables the reliable evaluation of system behavior by differentiating between stable and unstable states. While SSD techniques have been developed and tested in domains such as signal processing and industrial systems, their application in the information systems domain, particularly in process mining, has been largely overlooked. Specifically, event logs that record the executed behavior of a business process often contain data from both steady and non-steady states, which can distort process mining results, such as performance analysis and remaining time prediction. This paper highlights the importance of SSD in the process mining domain and investigates the applicability of existing SSD solutions. To operationalize this, we propose a two-step framework for detecting steady states in business processes. The framework extracts relevant process characteristics from an event log and applies established SSD techniques to identify periods during which a business process operated in a steady state. We evaluate the framework through experiments that assess its accuracy within a controlled environment using simulated event logs and that demonstrate the benefits of SSD for a downstream process mining task: remaining time prediction. The findings emphasize the potential of SSD for obtaining more accurate process mining insights.},
+  award    = {Runner-up best paper award (CAiSE 2025)},
   bibtex_show={true},
   category = {conference}
 }
@@ -311,6 +328,7 @@
   doi      = {10.18420/EMISA2025\_01},
   pdf      = {emisa-2025-vanderaa-bpm.pdf},
   venue    = {Keynote article for EMISA (2025)},
+  abstract = {The Business Process Management (BPM) field is characterized by its interdisciplinary nature and small close-knit community. While these aspects foster collaboration and intellectual diversity, they also pose challenges related to visibility and positioning within the broader academic landscape. This opinion piece, accompanying an EMISA 2025 keynote, reflects on recent developments that are helping to strengthen and future-proof BPM research. It highlights three promising directions: (1) initiatives that connect BPM to other research communities and break disciplinary silos, (2) growing attention to sound and transparent research methodology, and (3) community-building efforts that foster cohesion and support. By drawing attention to these trends, the article aims to encourage broader engagement and recognize the individuals and initiatives driving positive change.},
   bibtex_show={true},
   category = {invited}
 }
@@ -325,6 +343,7 @@
   publisher= {{IEEE}},
   doi      = {10.1109/ICPM66919.2025.11220725},
   pdf      = {icpm-2025-pyrih-llms.pdf},
+  abstract = {Process mining is increasingly using textual information associated with events to tackle tasks such as anomaly detection and process discovery. Such semantics-aware process mining focuses on what behavior should be possible in a process (i.e., expectations), thus providing an important complement to traditional, frequency-based techniques that focus on recorded behavior (i.e., reality). Large Language Models (LLMs) provide a powerful means for tackling semantics-aware tasks. However, the best performance is so far achieved through task-specific fine-tuning, which is computationally intensive and results in models that can only handle one specific task. To overcome this lack of generalization, we use this paper to investigate the potential of instruction-tuning for semantics-aware process mining. The idea of instruction-tuning here is to expose an LLM to promptanswer pairs for different tasks, e.g., anomaly detection and nextactivity prediction, making it more familiar with process mining, thus allowing it to also perform better at unseen tasks, such as process discovery. Our findings demonstrate a varied impact of instruction-tuning: while performance considerably improved on process discovery and prediction tasks, it varies across models on anomaly detection tasks, highlighting that the selection of tasks for instruction-tuning is critical to achieving desired outcomes.},
   bibtex_show={true},
   category = {conference}
 }
@@ -351,6 +370,7 @@
   year     = {2024},
   doi      = {10.1016/J.IS.2024.102404},
   pdf      = {infsyst-2024-rebmann-recognizing.pdf},
+  abstract = {User interaction data comprises events that capture individual actions that a user performs on their computer. Such events provide detailed records about how users carry out their tasks in a process, even when this involves different applications. Although the comprehensiveness of such data provides a promising basis for process mining, user interaction events cannot be used directly for this purpose, because they do not meet two essential requirements. In particular, they neither indicate their relation to a process-level activity nor their relation to a specific process execution. Therefore, user interaction data needs to be transformed so that it meets these requirements before process mining techniques can be applied. This transformation problem comprises identifying tasks and their types and determining the relation between tasks and process executions. While some existing approaches tackle parts of this problem, none address it comprehensively. Therefore, we propose an unsupervised approach for recognizing task-level events from user interaction data that addresses it in full. It segments user interaction data to identify tasks, categorizes these according to their type, and relates tasks to each other via object instances it extracts from the user interaction events. In this manner, our approach creates task-level events that meet the requirements of process mining settings. Our evaluation demonstrates the approach’s efficacy and shows that its combined consideration of control-flow, data, and semantic information allows it to outperform baseline approaches in both online and offline settings.},
   bibtex_show={true},
   category = {journal}
 }
@@ -364,6 +384,7 @@
   year     = {2024},
   doi      = {10.1007/S44311-024-00004-2},
   pdf      = {procsci-2024-kraus-data.pdf},
+  abstract = {Process resilience represents a core competence for organizations in light of an increasing number of process disruptions, such as sudden increases in case arrivals or absences in the workforce. It reflects an organization’s ability to restore a process to its acceptable performance level after a disruption. In this regard, the first key step for organizations towards achieving resilience is to understand how resilient their processes actually are. Although recognized as important, few works focus on such resilience assessment in a data-driven manner, thus barring organizations from gaining the necessary insights into how much their processes are affected by disruptions and how long it takes them to recover. To address this problem, we propose an approach for automated resilience assessment, based on recorded event data. Our approach interprets relevant process characteristics, such as the average lead time or arrival rate, as time series, which capture the development of the process execution over time. Based on these time series, it uses statistical modeling, specifically a vector autoregressive model, to determine the inter-relations between those characteristics and assess how the process performance responds to a disruption, i.e., a significant and temporal change in one of the process characteristics. We validate our approach by comparing its accuracy with a what-if analysis using a simulation model and demonstrate its effectiveness by assessing the resilience of the same process to diverse disruptions across different organizations.},
   bibtex_show={true},
   category = {journal}
 }
@@ -380,6 +401,8 @@
   series   = {Lecture Notes in Computer Science},
   doi      = {10.1007/978-3-031-70396-6\_16},
   pdf      = {bpm-2024-kraus-looking.pdf},
+  abstract = {Concept drift in process mining refers to a situation where a process undergoes changes over time, leading to a single event log containing data from multiple process versions. To avoid mixing these versions up during analysis, various techniques have been proposed to detect concept drifts. Yet, the performance of these techniques, especially in situations when event logs involve noise or gradual drifts, is shown to be far from optimal. A possible cause for this is that existing techniques are developed according to algorithmic design decisions, operating on assumptions about how drifts manifest themselves in event logs, which may not always reflect reality. In light of this, we propose a completely different approach, using a deep learning model that we trained to learn to recognize drifts. Our computer vision approach for concept drift detection (CV4CDD) uses an image-based representation that visualizes differences in process behavior over time, which enables us to subsequently apply a state-of-the-art object detection model to detect concept drifts. Our experiments reveal that our approach is considerably more accurate and robust than existing techniques, highlighting the promising nature of this new paradigm.},
+  award    = {Best student paper award (BPM 2024)},
   bibtex_show={true},
   category = {conference}
 }
@@ -396,6 +419,7 @@
   series   = {Lecture Notes in Computer Science},
   doi      = {10.1007/978-3-031-70396-6\_22},
   pdf      = {bpm-2024-grohs-beyond.pdf},
+  abstract = {Process managers apply conformance checking techniques to identify deviations between the desired and the actual execution of a process. From a process-level perspective, these deviations often involve multiple interrelated events, for example if activities are executed in the wrong order or are unnecessarily repeated. However, state-of-the-art conformance checking techniques do not reveal these process-level deviations, instead identifying only event-level deviations in the form of inserted or skipped events. To address this shortcoming, this paper presents an approach that discovers process-level deviations from event-level insights provided by alignment-based conformance checking techniques. These deviations are discovered as instantiations of five commonly used patterns of non-conformance: inserted, skipped, repeated, replaced, and swapped. The approach is designed to choose patterns according to a user’s preferences and contextualize them within parallelism and choices in the process model. Our evaluation shows that it reliably detects process-level deviations, thus providing process managers with more comprehensive information on process conformance.},
   bibtex_show={true},
   category = {conference}
 }
@@ -412,6 +436,7 @@
   series   = {Lecture Notes in Computer Science},
   doi      = {10.1007/978-3-031-61057-8\_8},
   pdf      = {caise-2024-elyasi-pgtnet.pdf},
+  abstract = {We present PGTNet, an approach that transforms event logs into graph datasets and leverages graph-oriented data for training Process Graph Transformer Networks to predict the remaining time of business process instances. PGTNet consistently outperforms state-of-the-art deep learning approaches across a diverse range of 20 publicly available real-world event logs. Notably, our approach is most promising for highly complex processes, where existing deep learning approaches encounter difficulties stemming from their limited ability to learn control-flow relationships among process activities and capture long-range dependencies. PGTNet addresses these challenges, while also being able to consider multiple process perspectives during the learning process.},
   bibtex_show={true},
   category = {conference}
 }
@@ -428,6 +453,8 @@
   series   = {Lecture Notes in Computer Science},
   doi      = {10.1007/978-3-031-81375-7\_11},
   pdf      = {coopis-2024-neuberger-assisted.pdf},
+  abstract = {Machine-learning based generation of process models from natural language text process descriptions provides a solution for the time-intensive and expensive process discovery phase. Many organizations have to carry out this phase, before they can utilize business process management and its benefits. Yet, research towards this is severely restrained by an apparent lack of large and high-quality datasets. This lack of data can be attributed to, among other things, an absence of proper tool assistance for business process information extraction dataset creation, resulting in high workloads and inferior data quality. We explore two assistance features to support dataset creation, a recommendation system for identifying process information in the text and visualization of the current state of already identified process information as a graphical business process model. A controlled user study with 31 participants shows that assisting dataset creators with recommendations lowers all aspects of workload, up to −51.0\%, and significantly improves annotation quality, up to +38.9\% in F1 score. We make all data and code available to encourage further research on additional novel assistance strategies.},
+  award    = {Runner-up best paper award (CoopIS 2024)},
   bibtex_show={true},
   category = {conference}
 }
@@ -444,6 +471,7 @@
   series   = {Lecture Notes in Computer Science},
   doi      = {10.1007/978-3-031-81375-7\_17},
   pdf      = {coopis-2024-grathwol-automating.pdf},
+  abstract = {Clinical pathways are structured, multidisciplinary care plans utilized by healthcare providers to standardize the management of specific clinical problems. Designed to bridge the gap between evidence and practice, clinical pathways aim to enhance clinical outcomes and improve efficiency, often reducing hospital stays and lowering healthcare costs. However, maintaining pathways with up-to-date, evidence-based recommendations is complex and time-consuming. It requires the integration of clinical guidelines, algorithmic procedures, and tacit knowledge from various institutions. A critical aspect of updating clinical pathways involves extracting procedural information from clinical guidelines, which are textual documents that detail medical procedures. This paper explores how Large Language Models (LLMs) can facilitate this extraction to support clinical pathway development and maintenance. Concretely, we present a conceptual model for using LLMs in this extraction task, provide a dataset comprising thousands of clinical guidelines for academic research, and share the results of initial experiments demonstrating the efficacy of LLMs in extracting relevant pathway information from these guidelines.},
   bibtex_show={true},
   category = {conference}
 }
@@ -460,6 +488,7 @@
   series   = {Lecture Notes in Computer Science},
   doi      = {10.1007/978-3-031-81375-7\_28},
   pdf      = {coopis-2024-neuberger-teapie.pdf},
+  abstract = {Machine-learning based generation of process models from natural language text process descriptions is severely restrained by a lack of datasets. This lack of data can be attributed to, among other things, an absence of proper tool assistance for dataset creation, resulting in high workloads and inferior data quality. We address these shortcomings with a tool for annotating textual process descriptions. Compared to other, existing data annotation tools, ours implements a multi-step workflow specifically designed for extracting process information, including supporting features that have been shown to reduce workloads and improve data quality.},
   bibtex_show={true},
   category = {workshop}
 }
@@ -476,6 +505,7 @@
   series   = {Lecture Notes in Computer Science},
   doi      = {10.1007/978-3-031-75872-0\_3},
   pdf      = {er-2024-neuberger-universal.pdf},
+  abstract = {Over the past decade, extensive research efforts have been dedicated to the extraction of information from textual process descriptions. Despite the remarkable progress witnessed in natural language processing (NLP), information extraction within the Business Process Management domain remains predominantly reliant on rule-based systems and machine learning methodologies. Data scarcity has so far prevented the successful application of deep learning techniques. However, the rapid progress in generative large language models (LLMs) makes it possible to solve many NLP tasks with very high quality without the need for extensive data. Therefore, we systematically investigate the potential of LLMs for extracting information from textual process descriptions, targeting the detection of process elements such as activities and actors, and relations between them. Using a heuristic algorithm, we demonstrate the suitability of the extracted information for process model generation. Based on a novel prompting strategy, we show that LLMs are able to outperform state-of-the-art machine learning approaches with absolute performance improvements of up to 8\% F1 score across three different datasets. We evaluate our prompting strategy on eight different LLMs, showing it is universally applicable, while also analyzing the impact of certain prompt parts on extraction quality. The number of example texts, the specificity of definitions, and the rigour of format instructions are identified as key for improving the accuracy of extracted information. Our code, prompts, and data are publicly available.},
   bibtex_show={true},
   category = {conference}
 }
@@ -490,6 +520,7 @@
   publisher= {{IEEE}},
   doi      = {10.1109/ICPM63005.2024.10680677},
   pdf      = {icpm-2024-rebmann-evaluating.pdf},
+  abstract = {The process mining community has recently recognized the potential of large language models (LLMs) for tackling various process mining tasks. Initial studies report the capability of LLMs to support process analysis and even, to some extent, that they are able to reason about how processes work. This latter property suggests that LLMs could also be used to tackle process mining tasks that benefit from an understanding of process behavior. Examples of such tasks include (semantic) anomaly detection and next activity prediction, which both involve considerations of the meaning of activities and their interrelations. In this paper, we investigate the capabilities of LLMs to tackle such semantics-aware process mining tasks. Furthermore, whereas most works on the intersection of LLMs and process mining only focus on testing these models out of the box, we provide a more principled investigation of the utility of LLMs for process mining, including their ability to obtain process mining knowledge post-hoc by means of in-context learning and supervised fine-tuning. Concretely, we define three process mining tasks that benefit from an understanding of process semantics and provide extensive benchmarking datasets for each of them. Our evaluation experiments reveal that (1) LLMs fail to solve challenging process mining tasks out of the box and when provided only a handful of in-context examples, (2) but they yield strong performance when fine-tuned for these tasks, consistently surpassing smaller, encoder-based language models.},
   bibtex_show={true},
   category = {conference}
 }
@@ -503,6 +534,8 @@
   publisher= {{IEEE}},
   doi      = {10.1109/ICPM63005.2024.10680665},
   pdf      = {icpm-2024-grisold-context.pdf},
+  abstract = {Process mining research has made tremendous progress in analyzing, visualizing, and predicting the performance of business processes through computational techniques. However, little attention has been brought to understanding why and how business processes behave as they do. Process mining results alone are not sufficient to arrive at meaningful interpretations about the dynamics and changes of a given business process. Rather, we need to account for contextual factors that underlie and explain the behavior of processes. In this paper, we make two central contributions. First, we develop a framework that depicts relevant factors to make sense of process mining results. The framework is intended to help researchers and practitioners explain why and how processes change across a variety of contexts. Second, we demonstrate the application of our framework within a real-world case: a customer onboarding process in a European financial institution.},
+  award    = {Runner-up best paper award (ICPM 2024)},
   bibtex_show={true},
   category = {conference}
 }
@@ -516,6 +549,8 @@
   publisher= {{IEEE}},
   doi      = {10.1109/ICPM63005.2024.10680660},
   pdf      = {icpm-2024-kirchdorfer-agentsimulator.pdf},
+  abstract = {Business process simulation (BPS) is a versatile technique for estimating process performance across various scenarios. Traditionally, BPS approaches employ a control-flow-first perspective by enriching a process model with simulation parameters. Although such approaches can mimic the behavior of centrally orchestrated processes, such as those supported by workflow systems, current control-flow-first approaches cannot faithfully capture the dynamics of real-world processes that involve distinct resource behavior and decentralized decision-making. Recognizing this issue, this paper introduces AgentSimulator, a resource-first BPS approach that discovers a multi-agent system from an event log, modeling distinct resource behaviors and interaction patterns to simulate the underlying process. Our experiments show that AgentSimulator achieves state-of-the-art simulation accuracy with significantly lower computation times than existing approaches while providing high interpretability and adaptability to different types of process-execution scenarios.},
+  award    = {Best paper award (ICPM 2024)},
   bibtex_show={true},
   category = {conference}
 }
@@ -532,6 +567,7 @@
   series   = {Lecture Notes in Business Information Processing},
   doi      = {10.1007/978-3-031-82225-4\_22},
   pdf      = {icpm-2024-yuan-enhancing.pdf},
+  abstract = {Predictive Process Monitoring (PPM) leverages historical data to forecast information about ongoing business processes. Recent methods have utilized advanced deep learning and classical machine learning models. However, the role of semantic information that can be extracted from event logs has been underexplored, although such information has been demonstrated to have significant advantages for other process mining tasks, such as anomaly detection. Therefore, this paper proposes a novel mechanism that aims to exploit semantic information for PPM, particularly by extracting information regarding the status of business objects associated with process instances from event data. We evaluate this mechanism in outcome-oriented and next activity prediction tasks, using state-of-the-art large language models (LLMs) for semantic extraction. Our results show that integrating semantic information improves prediction performance across these tasks. This work demonstrates that utilizing semantic information in PPM has considerable potential, especially in combination with advanced language models.},
   bibtex_show={true},
   category = {workshop}
 }
@@ -544,6 +580,7 @@
   year     = {2024},
   publisher= {{IEEE}},
   doi      = {10.1109/CBI62504.2024.00039},
+  abstract = {Process mining and visual analytics have developed independent from each other over a longer period of time, even though they focus on similar research questions and they work with event sequence data. The authors took part in a MiniDagstuhl Seminar held at the International Conference on Business Informatics 2024 in Vienna. This paper summarizes position statements of the authors on how process mining research and visual analytics complement each other.},
   bibtex_show={true},
   category = {invited}
 }
@@ -594,6 +631,7 @@
   year     = {2023},
   doi      = {10.1016/J.DATAK.2023.102175},
   pdf      = {dke-2023-fahrenkrogpetersen-optimal.pdf},
+  abstract = {Event logs that originate from information systems enable comprehensive analysis of business processes. These logs serve as the starting point for the discovery of process models or the analysis of conformance of a log with a given specification. However, logs potentially contain personal information about individuals involved in process execution. In this paper, we therefore address the risk of privacy attacks on event logs. Specifically, we rely on group-based privacy guarantees instead of noise insertion in order to enable anonymization without adding new behavior to the log. To this end, we propose two new algorithms for event log sanitization that provide privacy guarantees in terms of k-anonymity for the behavioral perspective of a process and t-closeness for sensitive information associated with events. The algorithms thereby avoid the disclosure of employee identities, prevent the identification of employee membership in the log, and preclude the characterization of employees based on sensitive attributes. Our algorithms overcome the limitations of an existing, greedy algorithm, providing users with a trade-off between computational complexity and the utility of the sanitized event log for downstream analysis. Our Experiments demonstrate that sanitization with our algorithms generates event logs of higher utility compared to the state of the art.},
   bibtex_show={true},
   category = {journal}
 }
@@ -607,6 +645,7 @@
   year     = {2023},
   doi      = {10.1016/J.IS.2023.102169},
   pdf      = {infsyst-2023-fahrenkrogpetersen-semantics.pdf},
+  abstract = {Information systems support the execution of business processes. As part of that, data about process execution is recorded in event logs, which can be used to analyze the control-flow of the respective processes. However, such data may contain personal information on process stakeholders that is protected by privacy regulations. Process analysis based on event logs shall, therefore, employ anonymization techniques. In this paper, we introduce two approaches to anonymize the recorded control-flow of a process. Specifically, we present SaCoFa and SaPa as two techniques to anonymize the result of trace-variant queries over an event log. Unlike existing techniques that achieve differential privacy through randomized noise insertion, our techniques rely on noise insertion mechanisms that incorporate a process’ semantics, thereby avoiding easily-recognizable noise. Both techniques take different design choices, though. SaCoFa anonymizes a trace-variant distribution directly, thereby focusing on utility preservation at the expense of potentially changing the number of a traces in the result considerably. SaPa, in turn, anonymizes a trace-variant distribution indirectly, through play-out of an anonymized directly-follows distribution. This way, the number of traces in the result is close to the original log, but the drop in utility may become larger due to using only local control-flow information. However, our experiments demonstrate that both approaches strike a better balance of preserving the utility of an event log compared to existing techniques.},
   bibtex_show={true},
   category = {journal}
 }
@@ -621,6 +660,7 @@
   year     = {2023},
   doi      = {10.1109/TSE.2022.3228308},
   pdf      = {tse-2023-schafer-sketch2process.pdf},
+  abstract = {Process models play an important role in various software engineering contexts. Among others, they are used to capture business-related requirements and provide the basis for the development of process-oriented applications in low-code/no-code settings. To support modelers in creating, checking, and maintaining process models, dedicated tools are available. While these tools are generally considered as indispensable to capture process models for their later use, the initial version of a process model is often sketched on a whiteboard or a piece of paper. This has been found to have great advantages, especially with respect to communication and collaboration. It, however, also creates the need to subsequently transform the model sketch into a digital counterpart that can be further processed by modeling and analysis tools. Therefore, to automate this task, various so-called sketch recognition approaches have been defined in the past. Yet, these existing approaches are too limited for use in practice, since they, for instance, require sketches to be created on a digital device or do not address the recognition of edges or textual labels. Against this background, we use this paper to introduce Sketch2Process, the first end-to-end sketch recognition approach for process models captured using BPMN. Sketch2Process uses a neural network-based architecture to recognize the shapes, edges, and textual labels of highly expressive process models, covering 25 types of BPMN elements. To train and evaluate our approach, we created a dataset consisting of 704 hand-drawn and manually annotated BPMN models. Our experiments demonstrate that our approach is highly accurate and consistently outperforms the state of the art.},
   bibtex_show={true},
   category = {journal}
 }
@@ -634,6 +674,7 @@
   publisher= {Association for Information Systems},
   pdf      = {amcis-2023-oberle-ddps.pdf},
   ais_url  = {https://aisel.aisnet.org/amcis2023/sig_dsa/sig_dsa/13/},
+  abstract = {Business Process Simulation (BPS) is commonly used by decision makers to evaluate the expected impact of process changes, without interfering in running systems. Though powerful, the benefits of BPS are highly dependent on the quality of the employed simulation model. Given that both manual and automated approaches have their limitations, we propose that simulation models should rather be created using a project-based approach, in which data-driven analysis techniques are applied in a manner tailored to the characteristics of the project at hand. In this work, we provide guidance for this by proposing DDPS, a project methodology for Data-Driven Process Simulation. The methodology guides users through project preparation and parameter estimation to the creation and validation of the simulation model itself, i.e., a digital twin derived from execution data. Overall, DDPS thus supports practitioners by making the proper execution of BPS projects more feasible.},
   bibtex_show={true},
   category = {conference}
 }
@@ -650,6 +691,7 @@
   series   = {Lecture Notes in Computer Science},
   doi      = {10.1007/978-3-031-41620-0\_10},
   pdf      = {bpm-2023-caspary-does.pdf},
+  abstract = {The detection of undesired behavior is a key task in process mining, supported by techniques for conformance checking and anomaly detection. A downside of conformance checking, though, is that it requires a process model as a basis, limiting its applicability, whereas existing anomaly detection techniques look for statistically infrequent behavior, even though infrequency does not necessarily imply undesirability. The recently introduced concept of semantic anomaly detection overcomes these issues by detecting behavior that stands out from a semantic point of view, such as a claim being paid after it has been rejected. In this manner, it detects behavior that is undesirable, while its grounding in natural language analysis allows it to consider behavioral regularities extracted from other processes, alleviating the need to have a process model available. However, the state-of-the-art approach for semantic anomaly detection, a rigid, rule-based approach, is limited in its scope and accuracy. Therefore, we propose a machine learning-based alternative, which uses a classifier trained to recognize whether observed process behavior is normal or anomalous. Our experiments show that this learning-based approach greatly outperforms the state of the art. Users can directly apply our approach to detect semantic anomalies in their own event data by using one of our pre-trained classifiers, even if their data contains so far unseen process behavior.},
   bibtex_show={true},
   category = {conference}
 }
@@ -666,6 +708,7 @@
   series   = {Lecture Notes in Computer Science},
   doi      = {10.1007/978-3-031-41620-0\_16},
   pdf      = {bpm-2023-resinas-from.pdf},
+  abstract = {Process performance measurement assesses how well a process is running, covering various dimensions such as time, cost, and quality. This task involves the definition of measurable Process Performance Indicators (PPIs), which in many cases are calculated based on data recorded in an event log. An inhibitor of effective performance analysis is that establishing PPI definitions measurable from event logs is highly complex, because it requires process analytical expertise, as well as in-depth knowledge about the structure and contents of the available event data. Given that managers typically do not have such knowledge, this means that those stakeholders that are generally most interested in measuring process performance cannot do so in a convenient manner. Recognizing this, we bridge this gap by proposing an approach for the measurement of process performance based on textual descriptions and event logs, which combines state-of-the-art natural language processing techniques with matching strategies that are tailored to the task at hand. Evaluation experiments using textual descriptions provided by both industry and academic users demonstrate the accuracy of our approach.},
   bibtex_show={true},
   category = {conference}
 }
@@ -682,6 +725,8 @@
   series   = {Lecture Notes in Computer Science},
   doi      = {10.1007/978-3-031-34560-9\_9},
   pdf      = {caise-2023-rebmann-unsupervised.pdf},
+  abstract = {User interaction events can give an accurate picture of tasks executed in a process, since they capture work performed across applications in a detailed manner. However, such data is too low level to be used for process analysis directly, since the underlying tasks are typically not apparent from individual events. Therefore, several task-recognition techniques were recently proposed that are able to abstract user interaction data to a higher level. However, these techniques work in an offline manner, requiring user interaction data to be stored in event logs. Such storage is often infeasible, though, due to the data’s sheer volume and its privacy-sensitive nature. While this can be avoided by analyzing user interaction data in a streaming manner, existing task-recognition techniques cannot be applied to such settings, since they require multiple, post-hoc passes over the entire data collection. To overcome this, we propose the first approach for unsupervised task recognition from user interaction streams. For a given stream, our approach continuously identifies task instances, groups them according to their type, and emits task-level events to an output stream. Our evaluation demonstrates our approach’s efficacy and shows that it outperforms two baseline approaches.},
+  award    = {Best paper award (CAiSE 2023)},
   bibtex_show={true},
   category = {conference}
 }
@@ -698,6 +743,7 @@
   series   = {Lecture Notes in Computer Science},
   doi      = {10.1007/978-3-031-33455-9\_19},
   pdf      = {eswc-2023-sola-activity.pdf},
+  abstract = {Activity recommendation in business process modeling is concerned with suggesting suitable labels for a new activity inserted by a modeler in a process model under development. Recently, it has been proposed to represent process model repositories as knowledge graphs, which makes it possible to address the activity-recommendation problem as a knowledge graph completion task. However, existing recommendation approaches are entirely dependent on the knowledge contained in the model repository used for training. This makes them rigid in general and even inapplicable in situations where a process model consists of unseen activities, which were not part of the repository used for training. In this paper, we avoid these issues by recognizing that the semantics contained in process models can be used to instead pose the activityrecommendation problem as a set of textual sequence-to-sequence tasks. This enables the application of transfer-learning techniques from natural language processing, which allows for recommendations that go beyond the activities contained in an available repository. We operationalize this with an activity-recommendation approach that employs a pre-trained language model at its core, and uses the representations of process knowledge as structured graphs combined with the natural-language-based semantics of process models. In an experimental evaluation, we show that our approach considerably outperforms the state of the art in terms of semantic accuracy of the recommendations and that it is able to recommend and handle activity labels that go beyond the vocabulary of the model repository used during training.},
   bibtex_show={true},
   category = {conference}
 }
@@ -713,6 +759,7 @@
   publisher= {ScholarSpace},
   doi      = {10.24251/HICSS.2023.666},
   pdf      = {hicss-2023-vu-what.pdf},
+  abstract = {Many organizations strive to increase the level of automation in their business processes. While automation historically was mainly concerned with automating physical labor, current automation efforts mostly focus on automation in a digital manner, thus targeting work that is related to the interaction between humans and computers. This type of automation, commonly referred to as business process automation, has many facets. Yet, academic literature mainly focuses on Robotic Process Automation, a specific automation capability. Recognizing that leading vendors offer automation capabilities going way beyond that, we use this paper to develop a detailed understanding of business process automation in industry. To this end, we conduct a structured market analysis of the 18 predominant vendors of business process automation solutions as identified by Gartner. As a result, we provide a comprehensive overview of the business process automation capabilities currently offered by industrial vendors. We show which types and facets of automation exist and which aspects represent promising directions for the future.},
   bibtex_show={true},
   category = {conference}
 }
@@ -728,6 +775,7 @@
   series   = {{CEUR} Workshop Proceedings},
   pdf      = {icpm-2023-lang-m.pdf},
   ceur_url = {https://ceur-ws.org/Vol-3648/},
+  abstract = {The Inductive Miner is a state-of-the-art algorithm for process discovery and a staple in process mining education, since its divide-and-conquer nature can teach students how to recognize behavioral relations in event data and to break up a discovery problem into smaller parts. However, a key problem from this educational perspective is that the algorithm’s manual application is time consuming, involving a considerable amount of drawing, whereas existing implementations of the algorithm only show the final outcome, not its intermediary steps. To overcome this, we present IM-viz, an educational process mining tool that visualizes the application of the Inductive Miner and the Inductive Miner infrequent in an iterative manner. IM-viz allows users to interactively explore how inductive mining works and how it deals with different kinds of event data, thus providing a convenient means for process mining students and educators to establish and analyze step-by-step process discovery examples.},
   bibtex_show={true},
   category = {workshop}
 }
@@ -744,6 +792,7 @@
   series   = {Lecture Notes in Business Information Processing},
   doi      = {10.1007/978-3-031-56107-8\_6},
   pdf      = {icpm-2023-goossens-from.pdf},
+  abstract = {Object-centric event data represent processes from the point of view of all the involved object types. This perspective has gained interest in recent years as it supports the analysis of processes that previously could not be adequately captured, due to the lack of a clear case notion as well as an increasing amount of output data that needs to be stored. Although publicly available event logs are crucial artifacts for researchers to develop and evaluate novel process mining techniques, the currently available object-centric event logs have limitations in this regard. Specifically, they mainly focus on control-flow and rarely contain objects with attributes that change over time, even though this is not realistic, as the attribute values of objects can be altered during their lifecycle. This paper addresses this gap by providing two means of establishing object-centric datasets with dynamically evolving attributes. First, we provide event log generators, which allow researchers to generate customized, artificial logs with dynamic attributes in the recently proposed DOCEL format. Second, we propose and evaluate an algorithm to convert OCEL logs into DOCEL logs, which involves the detection of event attributes that capture evolving object information and the creation of dynamic attributes from these. Through these contributions, this paper supports the advancement of object-centric process analysis by providing researchers with new means to obtain relevant data to use during the development of new techniques.},
   bibtex_show={true},
   category = {workshop}
 }
@@ -770,6 +819,7 @@
   year     = {2022},
   doi      = {10.1016/J.IS.2020.101666},
   pdf      = {infsyst-2022-bauer-sampling.pdf},
+  abstract = {Conformance checking enables organizations to automatically assess whether their business processes are executed according to their specification. State-of-the-art conformance checking algorithms perform this task by establishing alignments between behaviour recorded by IT systems to a process model capturing desired behaviour. While such alignments clearly highlight conformance issues, a major downside is that these algorithms scale exponentially in the size of both the event data, capturing recorded behaviour, and the process model used as input. At the same time, it is crucial to recognise that event data used for such analyses typically only relates to a specific interval of process execution rather than the entire history, meaning that the employed event data is inherently incomplete. Therefore, we argue that statistical methods allow one to obtain a proper understanding of the overall conformance of a process by considering only a fraction of the available data. In this paper, we therefore present a statistical approach to conformance checking that employs trace sampling and result approximation in order to derive conformance results in an efficient manner. The approach reduces the runtime significantly, while still providing guarantees on the accuracy of the estimated conformance result. We instantiate the general approach for different measures of the overall conformance of an event log and a process model, including fitness as a direct quantification of conformance as well as the distribution of deviations over activities and deviations related to contextual factors, such as the involved resources. Moreover, to increase the robustness of our approach, we elaborate on mechanisms to reveal biases in sampling procedures. Experiments with real-world and synthetic datasets show that our approach speeds up state-of-the-art conformance checking algorithms by up to three orders of magnitude, while largely maintaining the analysis accuracy.},
   bibtex_show={true},
   category = {journal}
 }
@@ -783,6 +833,7 @@
   year     = {2022},
   doi      = {10.1016/J.IS.2022.102049},
   pdf      = {infsyst-2022-sola-exploiting.pdf},
+  abstract = {Business process modeling is a crucial task in organizations. Yet, the creation of consistent and complete process models is challenging and necessitates the support of process modelers with their task. In previous work, we presented a rule-based activity-recommendation approach, which recommends appropriate labels for a new activity inserted by a modeler in a process model under development. While our method has shown to work well, it is limited by the fact that it only learns rules that describe the inter-relations between complete activity labels. In the case that the model’s activities and the ones in the training repository are disjoint, the existing approach will thus not be able to provide any recommendations. In this paper, we overcome this restriction by additionally considering the natural language-based semantics of the process models. In particular, we propose a semantics-aware recommendation approach that extends the existing approach in both central phases, i.e., in the rule-learning phase and in the rule-application phase. We equip the rule learning with novel rule types, which capture action and business-object patterns in process models. For the rule application, we developed an optional similarity extension that allows rules to make recommendations even if the bodies of the rules are not exactly true for the given model. Through an evaluation on a large set of real-world process models, we demonstrate that the semantic extensions can improve the quality of recommendations.},
   bibtex_show={true},
   category = {journal}
 }
@@ -796,6 +847,7 @@
   year     = {2022},
   doi      = {10.1016/J.IS.2022.102111},
   pdf      = {infsyst-2022-rebmann-enabling.pdf},
+  abstract = {Process mining is concerned with the analysis of organizational processes based on event data recorded during their execution. Foundational process mining techniques analyze such data in an abstract manner, without taking the meaning of these events or their payload into consideration. By contrast, other techniques may exploit specific kinds of information contained in event data, such as resources in organizational mining and business objects in object-centric analysis, to gain more specific insights into an organization’s operations. However, the information required for such analyses is typically not readily available. Rather, the meaning of events is often captured in an ad hoc manner, commonly through unstructured textual attributes, such as an event’s label, or in unclearly named attributes. In this work, we address this gap by proposing an approach for the automatic annotation of semantic components in event logs. To achieve this, we combine the analysis of textual attribute values, based on a state-of-the-art language model, with novel attribute classification and component categorization techniques. In this manner, our approach first identifies up to eight semantic components per event, revealing information on the actions, business objects, and resources recorded in an event log. Afterwards, our approach further categorizes the identified actions and actors, allowing for a more in-depth analysis of key process perspectives. We demonstrate our approach’s efficacy through an evaluation using a broad range of event logs and highlight its usefulness through four application scenarios enabled by our approach.},
   bibtex_show={true},
   category = {journal}
 }
@@ -812,6 +864,7 @@
   series   = {{CEUR} Workshop Proceedings},
   pdf      = {nl4ai-2022-bellan-process.pdf},
   ceur_url = {https://ceur-ws.org/Vol-3287/},
+  abstract = {Although there is a long tradition of work in NLP on extracting entities and relations from text, to date there exists very little work on the acquisition of business processes from unstructured data such as textual corpora of process descriptions. With this work, we aim to fill this gap and establish the first steps towards bridging data-driven information extraction methodologies from Natural Language Processing and the model-based formalization aimed at Business Process Management. For this, we develop the first corpus of business process descriptions annotated with activities, gateways, actors, and flow information. We present our new resource, including a detailed overview of the annotation schema and guidelines, as well as a variety of baselines to benchmark the difficulty and challenges of business process extraction from text.},
   bibtex_show={true},
   category = {workshop}
 }
@@ -828,6 +881,7 @@
   series   = {{CEUR} Workshop Proceedings},
   pdf      = {bpm-2022-grimm-cdlg.pdf},
   ceur_url = {https://ceur-ws.org/Vol-3216/},
+  abstract = {Process mining targets the analysis of data recorded during the execution of business processes. When such data covers a period in which a process underwent changes, an event log is subject to concept drifts. Given that such drifts can greatly affect the quality of insights obtained from them, numerous approaches have been established to detect concept drifts. However, assessing and comparing the quality of these approaches is hard, due to the lack of appropriate data. Recognizing this, we present CDLG; a powerful and highly-flexible tool for the generation of event logs with known concept drifts.},
   bibtex_show={true},
   category = {workshop}
 }
@@ -844,6 +898,7 @@
   series   = {Lecture Notes in Business Information Processing},
   doi      = {10.1007/978-3-031-25383-6\_23},
   pdf      = {bpm-2022-bellan-pet.pdf},
+  abstract = {Process extraction from text is an important task of process discovery, for which various approaches have been developed in recent years. However, in contrast to other information extraction tasks, there is a lack of gold-standard corpora of business process descriptions that are carefully annotated with all the entities and relationships of interest. Due to this, it is currently hard to compare the results obtained by extraction approaches in an objective manner, whereas the lack of annotated texts also prevents the application of data-driven information extraction methodologies, typical of the natural language processing field. Therefore, to bridge this gap, we present the PET dataset, a first corpus of business process descriptions annotated with activities, gateways, actors, and flow information. We present our new resource, including a variety of baselines to benchmark the difficulty and challenges of business process extraction from text. PET dataset, annotation guidelines, and inception schema are freely available for the research community via huggingface.co/datasets/patriziobellan/PET.},
   bibtex_show={true},
   category = {workshop}
 }
@@ -860,6 +915,7 @@
   series   = {Lecture Notes in Computer Science},
   doi      = {10.1007/978-3-031-16103-2\_25},
   pdf      = {bpm-2022-rebmann-uncovering.pdf},
+  abstract = {Object-centric event logs have recently been introduced as a means to capture event data of processes that handle multiple concurrent object types, with potentially complex interrelations. Such logs allow process mining techniques to handle multi-object processes in an appropriate manner. However, event data is often not yet available in this new format, but is rather captured in the form of classical, “flat” event logs. This flat representation obscures the true interrelations that exist between different objects and associated events, causing issues such as the well-known convergence and divergence of event data. This situation calls for support to transform classical event logs into object-centric counterparts. Such a transformation is far from straightforward, though, given that the information required for object-centric logs, such as explicitly indicated object types, identifiers, and properties, is not readily available in flat logs. In this paper, we propose an approach that automatically uncovers object-related information in flat event data and uses this information to transform the flat data into an object-centric event log according to the OCEL format. We achieve this by combining the semantic analysis of textual attributes with data profiling and control-flow-based relation extraction techniques. We demonstrate our approach’s efficacy through evaluation experiments and highlight its usefulness by applying it to real-life event logs in order to mitigate the quality issues caused by their flat representation.},
   bibtex_show={true},
   category = {conference}
 }
@@ -872,6 +928,7 @@
   year     = {2022},
   pdf      = {ecis-2022-abb-trace.pdf},
   ais_url  = {https://aisel.aisnet.org/ecis2022_rp/34/},
+  abstract = {Business information systems support a large variety of business processes and tasks, yet organizations rarely understand how users interact with these systems. User Behavior Mining aims to address this by applying process mining techniques to UI logs, i.e., detailed records of interactions with a system’s user interface. Insights gained from this type of data hold great potential for usability engineering and task automation, but the complexity of UI logs can make them challenging to analyze. In this paper, we explore trace clustering as a means to structure UI logs and reduce this complexity. In particular, we apply different trace clustering approaches to a real-life UI log and show that the cluster-level process models reveal useful information about user behavior. At the same time, we find configurations in which trace clustering fails to generate satisfactory partitions. Our results also demonstrate that recently proposed representation learning techniques for process traces can be effectively employed in a realistic setting.},
   bibtex_show={true},
   category = {conference}
 }
@@ -886,6 +943,7 @@
   publisher= {{IEEE}},
   doi      = {10.1109/ICDE53745.2022.00016},
   pdf      = {icde-2022-rebmann-gecco.pdf},
+  abstract = {Process mining enables the analysis of complex systems using event data recorded during the execution of processes. Specifically, models of these processes can be discovered from event logs, i.e., sequences of events. However, the recorded events are often too fine-granular and result in unstructured models that are not meaningful for analysis. Log abstraction therefore aims to group together events to obtain a higher-level representation of the event sequences. While such a transformation shall be driven by the analysis goal, existing techniques force users to define how the abstraction is done, rather than what the result shall be. In this paper, we propose GECCO, an approach for log abstraction that enables users to impose requirements on the resulting log in terms of constraints. GECCO then groups events so that the constraints are satisfied and the distance to the original log is minimized. Since exhaustive log abstraction suffers from an exponential runtime complexity, GECCO also offers a heuristic approach guided by behavioral dependencies found in the log. We show that the abstraction quality of GECCO is superior to baseline solutions and demonstrate the relevance of considering constraints during log abstraction in real-life settings.},
   bibtex_show={true},
   category = {conference}
 }
@@ -902,6 +960,7 @@
   series   = {Lecture Notes in Business Information Processing},
   doi      = {10.1007/978-3-031-27815-0\_3},
   pdf      = {icpm-2022-rebmann-multi.pdf},
+  abstract = {In process mining settings, events are often recorded on a low level and cannot be used for meaningful analysis directly. Moreover, the resulting variability in the recorded event sequences leads to complex process models that provide limited insights. To overcome these issues, event abstraction techniques pre-process the event sequences by grouping the recorded low-level events into higher-level activities. However, existing abstraction techniques require elaborate input about high-level activities upfront to achieve acceptable abstraction results. This input is often not available or needs to be constructed, which requires considerable manual effort and domain knowledge. We overcome this by proposing an approach that suggests groups of low-level events for event abstraction. It does not require the user to provide elaborate input upfront, but still allows them to inspect and select groups of events that are related based on their common multi-perspective contexts. To achieve this, our approach learns representations of events that capture their context and automatically identifies and suggests interesting groups of related events. The user can inspect group descriptions and select meaningful groups to abstract the low-level event log.},
   bibtex_show={true},
   category = {workshop}
 }
@@ -918,6 +977,7 @@
   series   = {{CEUR} Workshop Proceedings},
   pdf      = {icpm-2022-kirchmann-privacy.pdf},
   ceur_url = {https://ceur-ws.org/Vol-3299/},
+  abstract = {Process Mining allows for the data-driven analysis of business processes based on logs that contain fine-granular data from the process’ execution. However, such logs can potentially be exploited to extract sensitive information about process participants. To mitigate this risk, techniques that anonymize event logs to guarantee the privacy of process participants have recently been proposed. In this paper, we report on the integration of anonymization techniques for event logs into PM4Py, one of the leading process mining tools. Specifically, we incorporated several state-of-the-art solutions for differential privacy-based protection. By presenting the first integration of anonymization techniques into a general process mining toolkit, we make the respective algorithms accessible to the wider community of process mining experts and data scientists.},
   bibtex_show={true},
   category = {workshop}
 }
@@ -932,6 +992,7 @@
   publisher= {Springer},
   doi      = {10.1007/978-3-030-92875-9\_17},
   pdf      = {sp-2022-vanderaa-complex.pdf},
+  abstract = {Business Process Management targets the design, execution, and optimization of business operations. This includes techniques for process querying, i.e., methods to filter and transform business process representations. Some of these representations may assume the form of event data, with an event denoting an execution of an activity as part of a specific instance of a process. In this chapter, we argue that models and methods developed in the general field of Complex Event Processing (CEP) may be exploited for process querying. Specifically, if event data is generated continuously during process execution, CEP techniques may help to filter and transform process-related information by evaluating queries over event streams. Against this background, this chapter first outlines how CEP fits into common use cases and frameworks for process querying. We then review design choices of CEP models that are of importance when adopting the respective techniques. Finally, we discuss techniques for the application of CEP for process querying, namely those for event-process correlation, model-based query generation, automated discovery of event queries, and diagnostics for event query matches.},
   bibtex_show={true},
   category = {chapter}
 }
@@ -946,6 +1007,7 @@
   year     = {2021},
   doi      = {10.1016/J.IS.2021.101824},
   pdf      = {infsyst-2021-vanderaa-natural.pdf},
+  abstract = {Anomaly detection in process mining aims to recognize outlying or unexpected behavior in event logs for purposes such as the removal of noise and identification of conformance violations. Existing techniques for this task are primarily frequency-based, arguing that behavior is anomalous because it is uncommon. However, such techniques ignore the semantics of recorded events and, therefore, do not take the meaning of potential anomalies into consideration. In this work, we overcome this caveat and focus on the detection of anomalies from a semantic perspective, arguing that anomalies can be recognized when process behavior does not make sense. To achieve this, we propose an approach that exploits the natural language associated with events. Our key idea is to detect anomalous process behavior by identifying semantically inconsistent execution patterns. To detect such patterns, we first automatically extract business objects and actions from the textual labels of events. We then compare these against a process-independent knowledge base. By populating this knowledge base with patterns from various kinds of resources, our approach can be used in a range of contexts and domains. We demonstrate the capability of our approach to successfully detect semantic execution anomalies through an evaluation based on a set of real-world and synthetic event logs and show the complementary nature of semantics-based anomaly detection to existing frequency-based techniques.},
   bibtex_show={true},
   category = {journal}
 }
@@ -962,6 +1024,7 @@
   series   = {Lecture Notes in Business Information Processing},
   doi      = {10.1007/978-3-030-94343-1\_1},
   pdf      = {bpm-2021-sola-on.pdf},
+  abstract = {Business process modeling is essential for organisations. However, it is a time-consuming task that requires expert knowledge. In particular, this is the case when modeling domain-specific processes, which often involves the consistent use of technical terminology. Process modelers can be supported through the provision of recommendations on how the model under development can be expanded. Activity recommendation is one such support approach, in which suitable activities to be inserted at a user-defined position are recommended. Recently, it has been suggested to treat activity recommendation as a knowledge graph completion task and to apply methods from this discipline. In this paper, we investigate different approaches to apply embedding- and rule-based knowledge graph completion methods out of the box and evaluate them in an experimental study. Additionally, we compare them to two methods that have specifically been designed for activity recommendation.},
   bibtex_show={true},
   category = {workshop}
 }
@@ -979,6 +1042,7 @@
   series   = {Lecture Notes in Business Information Processing},
   doi      = {10.1007/978-3-030-94343-1\_6},
   pdf      = {bpm-2021-rosel-distance.pdf},
+  abstract = {To enable process analysis based on an event log without compromising the privacy of individuals involved in process execution, a log may be anonymized. Such anonymization strives to transform a log so that it satisfies provable privacy guarantees, while largely maintaining its utility for process analysis. Existing techniques perform anonymization using simple, syntactic measures to identify suitable transformation operations. This way, the semantics of the activities referenced by the events in a trace are neglected, potentially leading to transformations in which events of unrelated activities are merged. To avoid this and incorporate the semantics of activities during anonymization, we propose to instead incorporate a distance measure based on feature learning. Specifically, we show how embeddings of events enable the definition of a distance measure for traces to guide event log anonymization. Our experiments with real-world data indicate that anonymization using this measure, compared to a syntactic one, yields logs that are closer to the original log in various dimensions and, hence, have higher utility for process analysis.},
   bibtex_show={true},
   category = {workshop}
 }
@@ -995,6 +1059,7 @@
   series   = {Lecture Notes in Computer Science},
   doi      = {10.1007/978-3-030-79382-1\_4},
   pdf      = {caise-2021-rebmann-extracting.pdf},
+  abstract = {Process mining focuses on the analysis of recorded event data in order to gain insights about the true execution of business processes. While foundational process mining techniques treat such data as sequences of abstract events, more advanced techniques depend on the availability of specific kinds of information, such as resources in organizational mining and business objects in artifact-centric analysis. However, this information is generally not readily available, but rather associated with events in an ad hoc manner, often even as part of unstructured textual attributes. Given the size and complexity of event logs, this calls for automated support to extract such process information and, thereby, enable advanced process mining techniques. In this paper, we present an approach that achieves this through so-called semantic role labeling of event data. We combine the analysis of textual attribute values, based on a state-of-the-art language model, with a novel attribute classification technique. In this manner, our approach extracts information about up to eight semantic roles per event. We demonstrate the approach’s efficacy through a quantitative evaluation using a broad range of event logs and demonstrate the usefulness of the extracted information in a case study.},
   bibtex_show={true},
   category = {conference}
 }
@@ -1011,6 +1076,7 @@
   series   = {Lecture Notes in Computer Science},
   doi      = {10.1007/978-3-030-79382-1\_20},
   pdf      = {caise-2021-sola-rule.pdf},
+  abstract = {Business process modeling is a crucial, yet time-consuming and knowledge-intensive task. This is particularly the case when modeling a domain-specific process, which often requires the use of highly specialized terminology in a consistent manner. To alleviate these issues, the process modeling task can be supported by techniques that suggest how a model under development can be expanded. In this work, we provide such suggestions through a rule-based activity recommendation approach, which suggests suitable activities to be included at a user-defined position in a process model. A benefit of our rule-based work over other approaches is that it accompanies recommendations with explanations, providing additional transparency and trustworthiness to users. Furthermore, through comprehensive evaluation experiments on a large set of real-world process models, we show that our rule-based approach outperforms other methods, including an embedding-based one.},
   bibtex_show={true},
   category = {conference}
 }
@@ -1027,6 +1093,7 @@
   series   = {Lecture Notes in Computer Science},
   doi      = {10.1007/978-3-030-79382-1\_21},
   pdf      = {caise-2021-schafer-sketch2bpmn.pdf},
+  abstract = {Despite the widespread availability of process modeling tools, the first version of a process model is often drawn by hand on a piece of paper or whiteboard, especially when several people are involved in its elicitation. Though this has been found to be beneficial for the modeling task itself, it also creates the need to manually convert hand-drawn models afterward, such that they can be further used in a modeling tool. This manual transformation is associated with considerable time and effort and, furthermore, creates undesirable friction in the modeling workflow. In this paper, we alleviate this problem by presenting a technique that can automatically recognize and convert a sketch process model into a digital BPMN model. A key driver and contribution of our work is the creation of a publicly available dataset consisting of 502 manually annotated, hand-drawn BPMN models, covering 25 different BPMN elements. Based on this data set, we have established a neural network-based recognition technique that can reliably recognize and transform hand-drawn BPMN models. Our evaluation shows that our technique considerably outperforms available baselines and, therefore, provides a valuable basis to smoothen the modeling process.},
   bibtex_show={true},
   category = {conference}
 }
@@ -1041,6 +1108,8 @@
   publisher= {{IEEE}},
   doi      = {10.1109/ICPM53251.2021.9576857},
   pdf      = {icpm-2021-fahrenkrogpetersen-sacofa.pdf},
+  abstract = {Privacy-preserving process mining enables the analysis of business processes using event logs, while giving guarantees on the protection of sensitive information on process stakeholders. To this end, existing approaches add noise to the results of queries that extract properties of an event log, such as the frequency distribution of trace variants, for analysis. Noise insertion neglects the semantics of the process, though, and may generate traces not present in the original log. This is problematic. It lowers the utility of the published data and makes noise easily identifiable, as some traces will violate well-known semantic constraints. In this paper, we therefore argue for privacy preservation that incorporates a process’ semantics. For common trace-variant queries, we show how, based on the exponential mechanism, semantic constraints are incorporated to ensure differential privacy of the query result. Experiments demonstrate that our semantics-aware anonymization yields event logs of significantly higher utility than existing approaches.},
+  award    = {Best student paper award (ICPM 2021)},
   bibtex_show={true},
   category = {conference}
 }
@@ -1055,6 +1124,7 @@
   publisher= {{ACM}},
   doi      = {10.1145/3448016.3457304},
   pdf      = {sigmod-2021-zhao-eires.pdf},
+  abstract = {To support reactive and predictive applications, complex event processing (CEP) systems detect patterns in event streams based on predefined queries. To determine the events that constitute a query match, their payload data may need to be assessed together with data from remote sources. Such dependencies are problematic, since waiting for remote data to be fetched interrupts the processing of the stream. Yet, without event selection based on remote data, the query state to maintain may grow exponentially. In either case, the performance of the CEP system degrades drastically. To tackle these issues, we present EIRES, a framework for efficient integration of static data from remote sources in CEP. It employs a cost-model to determine when to fetch certain remote data elements and how long to keep them in a cache for future use. EIRES combines strategies for (i) prefetching that queries remote data based on anticipated use and (ii) lazy evaluation that postpones the event selection based on remote data without interrupting the stream processing. Our experiments indicate that the combination of these strategies improves the latency of query evaluation by up to 3,752× for synthetic data and 47× for real-world data.},
   bibtex_show={true},
   category = {conference}
 }
@@ -1068,6 +1138,7 @@
   year     = {2020},
   doi      = {10.1016/J.DSS.2020.113347},
   pdf      = {dss-2020-vanderaa-partial.pdf},
+  abstract = {While supporting the execution of business processes, information systems record event logs. Conformance checking relies on these logs to analyze whether the recorded behavior of a process conforms to the behavior of a normative specification. A key assumption of existing conformance checking techniques, however, is that all events are associated with timestamps that allow to infer a total order of events per process instance. Unfortunately, this assumption is often violated in practice. Due to synchronization issues, manual event recordings, or data corruption, events are only partially ordered. In this paper, we put forward the problem of partial order resolution of event logs to close this gap. It refers to the construction of a probability distribution over all possible total orders of events of an instance. To cope with the order uncertainty in real-world data, we present several estimators for this task, incorporating different notions of behavioral abstraction. Moreover, to reduce the runtime of conformance checking based on partial order resolution, we introduce an approximation method that comes with a bounded error in terms of accuracy. Our experiments with real-world and synthetic data reveal that our approach improves accuracy over the state-of-the-art considerably.},
   bibtex_show={true},
   category = {journal}
 }
@@ -1082,6 +1153,7 @@
   year     = {2020},
   doi      = {10.1145/3385191},
   pdf      = {acmtds-2020-busany-interval.pdf},
+  abstract = {Recognising patterns that correlate multiple events over time becomes increasingly important in applications that exploit the Internet of Things, reaching from urban transportation through surveillance monitoring to business workflows. In many real-world scenarios, however, timestamps of events may be erroneously recorded, and events may be dropped from a stream due to network failures or load shedding policies. In this work, we present SimpMatch, a novel simplex-based algorithm for probabilistic evaluation of event queries using constraints over event orderings in a stream. Our approach avoids learning probability distributions for time-points or occurrence intervals. Instead, we employ the abstraction of segmented intervals and compute the probability of a sequence of such segments using the notion of order statistics. The algorithm runs in linear time to the number of lost events and shows high accuracy, yielding exact results if event generation is based on a Poisson process and providing a good approximation otherwise. We demonstrate empirically that SimpMatch enables efficient and effective reasoning over event streams, outperforming state-of-the-art methods for probabilistic evaluation of event queries by up to two orders of magnitude.},
   bibtex_show={true},
   category = {journal}
 }
@@ -1096,6 +1168,7 @@
   year     = {2020},
   doi      = {10.1109/TKDE.2019.2897557},
   pdf      = {tkde-2020-vanderaa-efficient.pdf},
+  abstract = {Conformance checking enables organizations to automatically identify compliance violations based on the analysis of observed event data. A crucial requirement for conformance-checking techniques is that observed events can be mapped to normative process models used to specify allowed behavior. Without a mapping, it is not possible to determine if an observed event trace conforms to the specification or not. A considerable problem in this regard is that establishing a mapping between events and process model activities is an inherently uncertain task. Since the use of a particular mapping directly influences the conformance of an event trace to a specification, this uncertainty represents a major issue for conformance checking. To overcome this issue, we introduce a probabilistic conformance-checking technique that can deal with uncertain mappings. Our technique avoids the need to select a single mapping by taking the entire spectrum of possible mappings into account. A quantitative evaluation demonstrates that our technique can be applied on a considerable number of real-world processes where existing conformance-checking techniques fail.},
   bibtex_show={true},
   category = {journal}
 }
@@ -1112,6 +1185,7 @@
   series   = {Lecture Notes in Business Information Processing},
   doi      = {10.1007/978-3-030-58638-6\_4},
   pdf      = {bpm-2020-vanderaa-say.pdf},
+  abstract = {Declarative, constraint-based approaches have been proposed to model loosely-structured business processes, mediating between support and flexibility. A notable example is the Declare framework, equipped with a graphical declarative language whose semantics can be characterized with several logic-based formalisms. Up to now, the main problem hampering the use of Declare constraints in practice has been the difficulty of modeling them: Declare’s formal notation is difficult to understand for users without a background in temporal logic, whereas its graphical notation has been shown to be unintuitive. Therefore, in this work, we present and evaluate an analysis toolkit that aims at bypassing this issue by providing users with the possibility to model Declare constraints using their own way of expressing them. The toolkit contains a Declare modeler equipped with a speech recognition mechanism. It takes as input a vocal statement from the user and converts it into the closest (set of) Declare constraint(s). The constraints that can be modeled with the tool cover the entire Multi-Perspective extension of Declare (MP-Declare), which complements control-flow constraints with data and temporal perspectives. Although we focus on Declare, the work presented in this paper represents the first attempt to test the feasibility of speech recognition in business process modeling as a whole.},
   bibtex_show={true},
   category = {workshop}
 }
@@ -1128,6 +1202,7 @@
   series   = {Lecture Notes in Computer Science},
   doi      = {10.1007/978-3-030-58666-9\_7},
   pdf      = {bpm-2020-fahrenkrogpetersen-pripel.pdf},
+  abstract = {Event logs capture the execution of business processes in terms of executed activities and their execution context. Since logs contain potentially sensitive information about the individuals involved in the process, they should be pre-processed before being published to preserve the individuals’ privacy. However, existing techniques for such pre-processing are limited to a process’ control-flow and neglect contextual information, such as attribute values and durations. This thus precludes any form of process analysis that involves contextual factors. To bridge this gap, we introduce PRIPEL, a framework for privacy-aware event log publishing. Compared to existing work, PRIPEL takes a fundamentally different angle and ensures privacy on the level of individual cases instead of the complete log. This way, contextual information as well as the long tail process behaviour are preserved, which enables the application of a rich set of process analysis techniques. We demonstrate the feasibility of our framework in a case study with a real-world event log.},
   bibtex_show={true},
   category = {conference}
 }
@@ -1144,6 +1219,7 @@
   series   = {{CEUR} Workshop Proceedings},
   pdf      = {bpm-2020-alman-declo.pdf},
   ceur_url = {https://ceur-ws.org/Vol-2673/},
+  abstract = {Proposed approaches for modeling knowledge-intensive processes include declarative, constraint-based solutions, which meet halfway between support and flexibility. A noteworthy example is the Declare framework, which is equipped with a graphical declarative language whose semantics can be expressed with multiple logic-based formalisms. So far, the practical use of Declare constraints has been mostly hampered by the difficulty of modeling them: the formal notation of Declare represents a steep learning curve for users lacking an understanding of temporal logic, while the graphical notation has proven to be unintuitive. This work presents Declo, a chatbot that allows users to easily define declarative constraints using natural language statements provided in the form of vocal or textual input. The supported constraints cover the entire Multi-Perspective extension of Declare (MP-Declare), complementing control-flow constraints with data and temporal perspectives.},
   bibtex_show={true},
   category = {workshop}
 }
@@ -1160,6 +1236,8 @@
   series   = {Lecture Notes in Computer Science},
   doi      = {10.1007/978-3-030-62522-1\_14},
   pdf      = {er-2020-winter-assessing.pdf},
+  abstract = {Implementing regulatory documents is a recurring, mostly manual and time-consuming task for companies. To establish and ensure regulatory compliance, constraints need to be extracted from the documents and integrated into process models capturing existing operational practices. Since regulatory documents and processes are subject to frequent change, the constant comparison between both is mandatory. Additionally, new regulations must be integrated and checked against existing process models. To address these challenges, we provide an approach that uses natural language processing to automatically support compliance assessment between regulatory documents and process model repositories. The outcome is a pairwise matching between parts of a regulatory document and process models from a repository. This matching can be used to either determine the coverage of regulations by a process model or to guide compliance assessment by ranking models based on their fitness and cost. The approach is implemented and applied in two real-world case studies: one from the energy domain and the other based on the General Data Protection Regulation.},
+  award    = {Best student paper award (ER 2020)},
   bibtex_show={true},
   category = {conference}
 }
@@ -1174,6 +1252,7 @@
   year     = {2019},
   doi      = {10.1016/J.IS.2019.02.005},
   pdf      = {infsyst-2019-leopold-using.pdf},
+  abstract = {Many process model analysis techniques rely on the accurate analysis of the natural language contents captured in the models’ activity labels. Since these labels are typically short and diverse in terms of their grammatical style, standard natural language processing tools are not suitable to analyze them. While a dedicated technique for the analysis of process model activity labels was proposed in the past, it suffers from considerable limitations. First of all, its performance varies greatly among data sets with different characteristics and it cannot handle uncommon grammatical styles. What is more, adapting the technique requires in-depth domain knowledge. We use this paper to propose a machine learning-based technique for activity label analysis that overcomes the issues associated with this rule-based state of the art. Our technique conceptualizes activity label analysis as a tagging task based on a Hidden Markov Model. By doing so, the analysis of activity labels no longer requires the manual specification of rules. An evaluation using a collection of 15,000 activity labels demonstrates that our machine learning -based technique outperforms the state of the art in all aspects.},
   bibtex_show={true},
   category = {journal}
 }
@@ -1188,6 +1267,7 @@
   year     = {2019},
   doi      = {10.1007/S10270-017-0649-Y},
   pdf      = {sosym-2019-leopold-searching.pdf},
+  abstract = {Documenting business processes using process models is common practice in many organizations. However, not all process information is best captured in process models. Hence, many organizations complement these models with textual descriptions that specify additional details. The problem with this supplementary use of textual descriptions is that existing techniques for automatically searching process repositories are limited to process models. They are not capable of taking the information from textual descriptions into account and, therefore, provide incomplete search results. In this paper, we address this problem and propose a technique that is capable of searching textual as well as model-based process descriptions. It automatically extracts activity-related and behavioral information from both descriptions types and stores it in a unified data format. An evaluation with a large Austrian bank demonstrates that the additional consideration of textual descriptions allows us to identify more relevant processes from a repository.},
   bibtex_show={true},
   category = {journal}
 }
@@ -1204,6 +1284,7 @@
   series   = {{CEUR} Workshop Proceedings},
   pdf      = {bpm-2019-bauer-elpaas.pdf},
   ceur_url = {https://ceur-ws.org/Vol-2420/},
+  abstract = {The privacy of an organization’s workers represents a crucial concern in process mining settings, where data on an individual’s performance is recorded and possibly shared for analysis. To enable users to appropriately deal with privacy concerns in process mining, this paper introduces ELPaaS (Event Log Privacy as a Service), a web application that offers state-of-the-art techniques for event log sanitization and privacy-preserving process mining queries. By employing our techniques, users obtain event logs and process mining results that provide privacy guarantees such as differential privacy and k-anonymity. Hence, the privacy of an organization’s workers is protected.},
   bibtex_show={true},
   category = {workshop}
 }
@@ -1220,6 +1301,8 @@
   series   = {Lecture Notes in Computer Science},
   doi      = {10.1007/978-3-030-26619-6\_13},
   pdf      = {bpm-2019-bauer-estimating.pdf},
+  abstract = {The increasing volume of event data that is recorded by information systems during the execution of business processes creates manifold opportunities for process analytics. Specifically, conformance checking compares the behaviour as recorded by an information system to a model of desired behaviour. Unfortunately, state-of-the-art conformance checking algorithms scale exponentially in the size of both the event data and the model used as input. At the same time, event data used for analysis typically relates only to a certain interval of process execution, not the entire history. Given this inherent data incompleteness, we argue that an understanding of the overall conformance of process execution may be obtained by considering only a small fraction of a log. In this paper, we therefore present a statistical approach to ground conformance checking in trace sampling and conformance approximation. This approach reduces the runtime significantly, while still providing guarantees on the accuracy of the estimated conformance result. Comprehensive experiments with real-world and synthetic datasets illustrate that our approach speeds up state-of-the-art conformance checking algorithms by up to three orders of magnitude, while largely maintaining the analysis accuracy.},
+  award    = {Runner-up best paper award (BPM 2019)},
   bibtex_show={true},
   category = {conference}
 }
@@ -1237,6 +1320,7 @@
   doi      = {10.1007/978-3-030-37453-2\_50},
   pdf      = {bpm-2019-vanderaa-complex.pdf},
   venue    = {Keynote article for the PQ Workshop @ BPM},
+  abstract = {Process querying targets the filtering and transformation of business process representations, such as event data recorded by information systems. This paper argues for the application of models and methods developed in the general field of Complex Event Processing (CEP) for process querying. Specifically, if event data is generated continuously during process execution, CEP techniques may help to filter and transform process-related information by evaluating queries over event streams. This paper motivates the use of such event-based process querying, and discuss common challenges and techniques for the application of CEP for process querying. In particular, focusing on event-activity correlation, automated query derivation, and diagnostics for query matches.},
   bibtex_show={true},
   category = {invited}
 }
@@ -1253,6 +1337,7 @@
   series   = {Lecture Notes in Computer Science},
   doi      = {10.1007/978-3-030-21290-2\_23},
   pdf      = {caise-2019-vanderaa-extracting.pdf},
+  abstract = {Process models are an important means to capture information on organizational operations and often represent the starting point for process analysis and improvement. Since the manual elicitation and creation of process models is a time-intensive endeavor, a variety of techniques have been developed that automatically derive process models from textual process descriptions. However, these techniques, so far, only focus on the extraction of traditional, imperative process models. The extraction of declarative process models, which allow to effectively capture complex process behavior in a compact fashion, has not been addressed. In this paper we close this gap by presenting the first automated approach for the extraction of declarative process models from natural language. To achieve this, we developed tailored Natural Language Processing techniques that identify activities and their inter-relations from textual constraint descriptions. A quantitative evaluation shows that our approach is able to generate constraints that closely resemble those established by humans. Therefore, our approach provides automated support for an otherwise tedious and complex manual endeavor.},
   bibtex_show={true},
   category = {conference}
 }
@@ -1266,6 +1351,7 @@
   publisher= {{IEEE}},
   doi      = {10.1109/ICPM.2019.00012},
   pdf      = {icpm-2019-fahrenkrogpetersen-pretsa.pdf},
+  abstract = {Event logs that originate from information systems enable comprehensive analysis of business processes, e.g., by process model discovery. However, logs potentially contain sensitive information about individual employees involved in process execution that are only partially hidden by an obfuscation of the event data. In this paper, we therefore address the risk of privacy-disclosure attacks on event logs with pseudonymized employee information. To this end, we introduce PRETSA, a novel algorithm for event log sanitization that provides privacy guarantees in terms of k-anonymity and t-closeness. It thereby avoids disclosure of employee identities, their membership in the event log, and their characterization based on sensitive attributes, such as performance information. Through stepwise transformations of a prefix-tree representation of an event log, we maintain its high utility for discovery of a performance-annotated process model. Experiments with real-world data demonstrate that sanitization with PRETSA yields event logs of higher utility compared to methods that exploit frequency-based filtering, while providing the same privacy guarantees.},
   bibtex_show={true},
   category = {conference}
 }
@@ -1281,6 +1367,7 @@
   series   = {{CEUR} Workshop Proceedings},
   pdf      = {refsq-2019-mendling-natural.pdf},
   ceur_url = {https://ceur-ws.org/Vol-2376/},
+  abstract = {This paper is a report paper that focuses on research at the intersection of business process management and requirements engineering. It gives an overview of the research on natural language processing with process models organized in terms of 25 challenges. This research line is pursued in a cross-university collaboration between the authors and further colleagues. We describe the most important contributions of the authors and highlight directions for future research.},
   bibtex_show={true},
   category = {workshop}
 }
@@ -1293,6 +1380,7 @@
   publisher= {Springer},
   series   = {Lecture Notes in Business Information Processing},
   doi      = {10.1007/978-3-319-94634-4},
+  abstract = {Processes within organizations can be highly complex chains of inter-related steps, involving numerous stakeholders and information systems. Due to this complexity, having access to the right information is vital to the proper execution and effective management of an organization’s business processes. A major challenge in this regard is that information on a single process is often spread out over numerous models, documents, and systems. This phenomenon results from efforts to provide a variety of process stakeholders with the information that is relevant to them, in a suitable format. However, this disintegration of process information also has considerable disadvantages for organizations. In particular, it can lead to severe maintenance issues, reduced execution efficiency, and negative effects on the quality of process results. Against this background, this doctoral thesis focuses on the spread of process information in organizations and, in particular, on the mitigation of the negative aspects associated with this phenomenon. The main contributions of this thesis are five techniques that focus on the alignment and comparison of process information from different informational artifacts. Each of these techniques tackles a specific scenario involving multiple informational artifacts that contain process information in different representation formats. Among others, we present automated techniques for the detection of inconsistencies between process models and textual process descriptions, the alignment of process performance measurements to process models, conformance-checking in the context of uncertainty, and the matching of process models through the analysis of event-log information. We demonstrate the efficacy and usefulness of these techniques through quantitative evaluations involving data obtained from real-world settings. Altogether, the presented work provides important contributions for the analysis, comparison, and alignment of process information in various representation formats through the development of novel concepts and techniques. The contributions, furthermore, provide a means for organizations to improve the efficiency and quality of their processes.},
   bibtex_show={true},
   category = {book}
 }
@@ -1306,6 +1394,7 @@
   year     = {2018},
   doi      = {10.1016/J.DATAK.2018.04.008},
   pdf      = {dke-2018-kuss-probabilistic.pdf},
+  abstract = {Process model matching refers to the automatic identification of corresponding activities between two process models. It represents the basis for many advanced process model analysis techniques such as the identification of similar process parts or process model search. A central problem is how to evaluate the performance of process model matching techniques. Current evaluation methods require a binary gold standard that clearly defines which correspondences are correct. The problem is that often not even humans can agree on a set of correct correspondences. Hence, evaluating the performance of matching techniques based on a binary gold standard does not take the true complexity of the matching problem into account and does not fairly assess the capabilities of a matching technique. In this paper, we propose a novel evaluation procedure for process model matching techniques. In particular, we build on the assessments of multiple annotators to define the notion of a non-binary gold standard. In this way, we avoid the problem of agreeing on a single set of correct correspondences. Based on this non-binary gold standard, we introduce probabilistic versions of precision, recall, and F-measure as well as a distance-based performance measure. We use a dataset from the Process Model Matching Contest 2015 and a total of 16 matching systems to assess and compare the insights that can be obtained by using our evaluation procedure. We find that our probabilistic evaluation procedure allows us to gain more detailed insights into the performance of matching systems than a traditional evaluation based on a binary gold standard.},
   bibtex_show={true},
   category = {journal}
 }
@@ -1319,6 +1408,7 @@
   year     = {2018},
   doi      = {10.1016/J.DATAK.2018.09.001},
   pdf      = {dke-2018-sanchezferreres-aligning.pdf},
+  abstract = {Process model descriptions are an ubiquitous source of information that exists in any organization. To reach different types of stakeholders, distinct descriptions are often kept, so that process understandability is boosted with respect to individual capabilities. While the use of distinct representations allows more stakeholders to interpret process information, it also poses a considerable challenge: to keep different process descriptions aligned. In this paper, a novel technique to align process models and textual descriptions is proposed. The technique is grounded on projecting knowledge extracted from these two representations into a uniform representation that is amenable for comparison. It applies a tailored linguistic analysis of each description, so that the important information is considered when aligning description’ elements. Compared to existing approaches that address this use case, our technique provides more comprehensive alignments, which encompass process model activities, events, and gateways. Furthermore, the technique, which has has been implemented into the platform nlp4bpm.cs.upc.edu, shows promising results based on experiments with real-world data.},
   bibtex_show={true},
   category = {journal}
 }
@@ -1332,6 +1422,7 @@
   year     = {2018},
   doi      = {10.1016/J.IS.2018.01.007},
   pdf      = {infsyst-2018-vanderaa-checking.pdf},
+  abstract = {Textual process descriptions are widely used in organizations since they can be created and understood by virtually everyone. Because of their widespread use, they also provide a valuable source for process analysis, such as compliance checking. However, the inherent ambiguity of natural language impedes the automated analysis of textual process descriptions. While human readers can use their context knowledge to correctly understand statements with multiple possible interpretations, automated tools currently have to make assumptions about their correct meaning. As a result, compliance-checking techniques are prone to draw incorrect conclusions about the proper execution of a process. To provide a comprehensive solution to these reasoning problems, we use this paper to introduce the concept of a behavioral space as a means to deal with behavioral ambiguity in textual process descriptions. A behavioral space captures all possible interpretations of a textual process description in a systematic manner. Thus, it avoids the problem of focusing on a single, possibly incorrect interpretation. We use a quantitative evaluation with a set of of 47 textual process descriptions to demonstrate the usefulness of a behavioral space for compliance checking in the context of ambiguous texts.},
   bibtex_show={true},
   category = {journal}
 }
@@ -1343,6 +1434,7 @@
   year     = {2018},
   pdf      = {phdthesis-2018-vanderaa-comparing.pdf},
   website  = {https://hdl.handle.net/1871/55531},
+  abstract = {Processes within organizations can be highly complex chains of inter-related steps, involving numerous stakeholders and information systems. Due to this complexity, having access to the right information is vital to the proper execution and effective management of an organization’s business processes. A major challenge in this regard is that information on a single process is often spread out over numerous models, documents, and systems. This phenomenon results from efforts to provide a variety of process stakeholders with the information that is relevant to them, in a suitable format. However, this disintegration of process information also has considerable disadvantages for organizations. In particular, it can lead to severe maintenance issues, reduced execution efficiency, and negative effects on the quality of process results. Against this background, this doctoral thesis focuses on the spread of process information in organizations and, in particular, on the mitigation of the negative aspects associated with this phenomenon. The main contributions of this thesis are five techniques that focus on the alignment and comparison of process information from different informational artifacts. Each of these techniques tackles a specific scenario involving multiple informational artifacts that contain process information in different representation formats. Among others, we present automated techniques for the detection of inconsistencies between process models and textual process descriptions, the alignment of process performance measurements to process models, conformance-checking in the context of uncertainty, and the matching of process models through the analysis of event-log information. We demonstrate the efficacy and usefulness of these techniques through quantitative evaluations involving data obtained from real-world settings. Altogether, the presented work provides important contributions for the analysis, comparison, and alignment of process information in various representation formats through the development of novel concepts and techniques. The contributions, furthermore, provide a means for organizations to improve the efficiency and quality of their processes.},
   bibtex_show={true},
   category = {thesis}
 }
@@ -1353,6 +1445,7 @@
   school   = {Master's Thesis, Eindhoven University of Technology},
   year     = {2013},
   pdf      = {mscthesis-2013-vanderaa-composing.pdf},
+  abstract = {The proper composition of activities is important for the design of efficient and understandable workflow processes. Due to a lack of available support, activity composition is currently a time-consuming, manual task that requires expertise and case knowledge. This thesis presents an automated approach that addresses this issue. The approach utilizes the data-flow underlying a workflow process to determine the importance and semantic relatedness of the various, elementary data-processing steps. Based on these aspects, fundamental guidelines are proposed to drive and objectify the task of activity composition in the context of workflow design. A quantitative evaluation indicates that the use of these guidelines leads to activities that closely resemble those designed by experienced modellers. The guidelines have been implemented in software that has been made freely available. This enables any modeller to generate proper activities for a given workflow, irrespective of their familiarity with the business process or the concepts of activity design.},
   bibtex_show={true},
   category = {thesis}
 }
@@ -1369,6 +1462,7 @@
   series   = {Lecture Notes in Business Information Processing},
   doi      = {10.1007/978-3-319-91704-7\_5},
   pdf      = {caise-2018-leopold-identifying.pdf},
+  abstract = {The continuous digitization requires organizations to improve the automation of their business processes. Among others, this has lead to an increased interest in Robotic Process Automation (RPA). RPA solutions emerge in the form of software that automatically executes repetitive and routine tasks. While the benefits of RPA on cost savings and other relevant performance indicators have been demonstrated in different contexts, one of the key challenges for RPA endeavors is to effectively identify processes and tasks that are suitable for automation. Textual process descriptions, such as work instructions, provide rich and important insights about this matter. However, organizations often maintain hundreds or even thousands of them, which makes a manual analysis unfeasible for larger organizations. Recognizing the large manual effort required to determine the current degree of automation in an organization’s business processes, we use this paper to propose an approach that is able to automatically do so. More specifically, we leverage supervised machine learning to automatically identify whether a task described in a textual process description is manual, an interaction of a human with an information system or automated. An evaluation with a set of 424 activities from a total of 47 textual process descriptions demonstrates that our approach produces satisfactory results.},
   bibtex_show={true},
   category = {workshop}
 }
@@ -1382,6 +1476,7 @@
   year     = {2018},
   publisher= {Association for Computational Linguistics},
   pdf      = {coling-2018-vanderaa-challenges.pdf},
+  abstract = {The Business Process Management (BPM) field focuses in the coordination of labor so that organizational processes are smoothly executed in a way that products and services are properly delivered. At the same time, NLP has reached a maturity level that enables its widespread application in many contexts, thanks to publicly available frameworks. In this position paper, we show how NLP has potential in raising the benefits of BPM practices at different levels. Instead of being exhaustive, we show selected key challenges were a successful application of NLP techniques would facilitate the automation of particular tasks that nowadays require a significant effort to accomplish. Finally, we report on applications that consider both the process perspective and its enhancement through NLP.},
   bibtex_show={true},
   category = {conference}
 }
@@ -1398,6 +1493,7 @@
   series   = {{CEUR} Workshop Proceedings},
   pdf      = {lwda-2018-offel-towards.pdf},
   ceur_url = {https://ceur-ws.org/Vol-2191/},
+  abstract = {Complex event processing (CEP) systems evaluate continuous queries over event streams in order to detect event patterns that characterise a situation of interest. Over the last decade, models and systems for CEP have been an active area of research. A plethora of languages for the definition of queries as well as algorithms and architectures for their efficient and robust evaluation have been proposed. However, we argue that much of this work adopted a pragmatic view, striving for technical solutions of problems that are rooted directly in specific applications. As such, formal methods that help in the design and implementation of CEP systems are underdeveloped. In this paper, we put forward the idea of exploiting well-established formalisms for concurrent systems in the analysis of CEP systems. We discuss query verification, query parallelisation, and out-of-order event handling as three exemplary use cases for formal methods for CEP. Moreover, we outline our initial results on addressing these use cases through a Petri-net-based formalisation of event queries, event streams, and evaluation architectures.},
   bibtex_show={true},
   category = {workshop}
 }
@@ -1411,6 +1507,7 @@
   year     = {2017},
   doi      = {10.1016/J.IS.2016.07.010},
   pdf      = {infsyst-2017-vanderaa-comparing.pdf},
+  abstract = {Many organizations maintain textual process descriptions alongside graphical process models. The purpose is to make process information accessible to various stakeholders, including those who are not familiar with reading and interpreting the complex execution logic of process models. Despite this merit, there is a clear risk that model and text become misaligned when changes are not applied to both descriptions consistently. For organizations with hundreds of different processes, the effort required to identify and clear up such conflicts is considerable. To support organizations in keeping their process descriptions consistent, we present an approach to automatically identify inconsistencies between a process model and a corresponding textual description. Our approach detects cases where the two process representations describe activities in different orders and detect process model activities not contained in the textual description. A quantitative evaluation with 53 real-life model-text pairs demonstrates that our approach accurately identifies inconsistencies between model and text.},
   bibtex_show={true},
   category = {journal}
 }
@@ -1424,6 +1521,7 @@
   year     = {2017},
   doi      = {10.1016/J.IS.2017.06.005},
   pdf      = {infsyst-2017-vanderaa-transforming.pdf},
+  abstract = {Monitoring process performance is an important means for organizations to identify opportunities to improve their operations. The definition of suitable Process Performance Indicators (PPIs) is a crucial task in this regard. Because PPIs need to be in line with strategic business objectives, the formulation of PPIs is a managerial concern. Managers typically start out to provide relevant indicators in the form of natural language PPI descriptions. Therefore, considerable time and effort have to be invested to transform these descriptions into PPI definitions that can actually be monitored. This work presents an approach that automates this task. The presented approach transforms an unstructured natural language PPI description into a structured notation that is aligned with the implementation underlying a business process. To do so, we combine Hidden Markov Models and semantic matching techniques. A quantitative evaluation on the basis of a data collection obtained from practice demonstrates that our approach works accurately. Therefore, it represents a viable automated alternative to an otherwise laborious manual endeavor.},
   bibtex_show={true},
   category = {journal}
 }
@@ -1436,6 +1534,7 @@
   publisher= {Association for Information Systems},
   pdf      = {amcis-2017-vanderaa-causes.pdf},
   ais_url  = {https://aisel.aisnet.org/amcis2017/OrganizationalIS/Presentations/6/},
+  abstract = {Having access to the right information is vital to the effective and efficient execution of an organization’s business processes. A major challenge in this regard is that information on a single process is often spread out over numerous models, documents, and systems. Despite the potential consequences of this situation, there is a lack of insights on how to mitigate its impact. Against this background, we conducted an explorative case study to analyze the causes and consequences of the fragmentation of process information. We found that the widespread fragmentation of information had a considerable impact on the investigated organization. In particular, fragmentation led to severe maintenance issues, reduced process execution efficiency, and had a negative effect on the quality of process results. Our findings provide useful insights for both practice and research on how to mitigate the negative aspects associated with the fragmentation of process information.},
   bibtex_show={true},
   category = {conference}
 }
@@ -1452,6 +1551,8 @@
   series   = {Lecture Notes in Computer Science},
   doi      = {10.1007/978-3-319-59536-8\_6},
   pdf      = {caise-2017-vanderaa-checking.pdf},
+  abstract = {A crucial requirement for compliance-checking techniques is that observed behavior, captured in event traces, can be mapped to the process models that specify allowed behavior. Without a mapping, it is not possible to determine if observed behavior is compliant or not. A considerable problem in this regard is that establishing a mapping between events and process model activities is an inherently uncertain task. Since the use of a particular mapping directly influences the compliance of a trace to a specification, this uncertainty represents a major issue for compliance checking. To overcome this issue, we introduce a probabilistic compliance-checking method that can deal with uncertain mappings. Our method avoids the need to select a single mapping, but rather works on a spectrum of possible mappings. A quantitative evaluation demonstrates that our method can be applied on a considerable number of real-world processes where traditional compliance-checking methods fail.},
+  award    = {Runner-up best paper award (CAiSE 2017)},
   bibtex_show={true},
   category = {conference}
 }
@@ -1468,6 +1569,7 @@
   series   = {Lecture Notes in Computer Science},
   doi      = {10.1007/978-3-319-59536-8\_18},
   pdf      = {caise-2017-vanderaa-instance.pdf},
+  abstract = {Process model matching provides the basis for many process analysis techniques such as inconsistency detection and process querying. The matching task refers to the automatic identification of correspondences between activities in two process models. Numerous techniques have been developed for this purpose, all share a focus on process-level information. In this paper we introduce instance-based process matching, which specifically focuses on information related to instances of a process. In particular, we introduce six similarity metrics that each use a different type of instance information stored in the event logs associated with processes. The proposed metrics can be used as standalone matching techniques or to complement existing process model matching techniques. A quantitative evaluation on real-world data demonstrates that the use of information from event logs is essential in identifying a considerable amount of correspondences.},
   bibtex_show={true},
   category = {conference}
 }
@@ -1481,6 +1583,7 @@
   year     = {2016},
   doi      = {10.1016/J.COMPIND.2015.04.005},
   pdf      = {compind-2016-vanderaa-designing.pdf},
+  abstract = {To design a workflow process that is efficient, meaningful, and understandable it is important to properly consider how to compose the activities it will consist of. In this paper, guidelines are presented for this exact purpose. These focus on the elementary data-processing steps that are at the core of a workflow process. The guidelines help to determine the relative importance of these data-processing steps as well as their relatedness, such that activities can be composed in a fully automated manner. We implemented this approach in freely available software. A thorough evaluation that incorporates real-life workflow designs indicates that the use of these guidelines leads to activities that closely resemble those designed by experienced modelers. As such, the proposed guidelines provide a proper and automated alternative to what is otherwise a complex and time-consuming task.},
   bibtex_show={true},
   category = {journal}
 }
@@ -1494,6 +1597,7 @@
   year     = {2016},
   doi      = {10.1016/J.DSS.2016.05.004},
   pdf      = {dss-2016-diciccio-detecting.pdf},
+  abstract = {Timely identifying flight diversions is a crucial aspect of efficient multi-modal transportation. When an airplane diverts, logistics providers must promptly adapt their transportation plans in order to ensure proper delivery despite such an unexpected event. In practice, the different parties in a logistics chain do not exchange real-time information related to flights. This calls for a means to detect diversions that just requires publicly available data, thus being independent of the communication between different parties. The dependence on public data results in a challenge to detect anomalous behavior without knowing the planned flight trajectory. Our work addresses this challenge by introducing a prediction model that just requires information on an airplane’s position, velocity, and intended destination. This information is used to distinguish between regular and anomalous behavior. When an airplane displays anomalous behavior for an extended period of time, the model predicts a diversion. A quantitative evaluation shows that this approach is able to detect diverting airplanes with excellent precision and recall even without knowing planned trajectories as required by related research. By utilizing the proposed prediction model, logistics companies gain a significant amount of response time for these cases.},
   bibtex_show={true},
   category = {journal}
 }
@@ -1507,6 +1611,7 @@
   publisher= {Association for Information Systems},
   pdf      = {amcis-2016-andrade-factors.pdf},
   ais_url  = {https://aisel.aisnet.org/amcis2016/EndUser/Presentations/2/},
+  abstract = {Many organizations face noncompliance in their business processes. Such noncompliant behavior can range from well-intended actions to the deliberate omission of essential tasks. The current view on noncompliance is mostly negative and many researchers discuss how to avoid it altogether. A gap in the research is a lack of empirical insights on when noncompliance has positive and when it has negative effects. Against this background, we conduct a qualitative study in the customer service department of a company hosting one of Europe’s leading online project platforms. Differing from previous studies on business process noncompliance, the starting point of our study is direct observations of how employees conduct their work. We found that noncompliant behavior with a positive intention had a mostly positive effect on business process outcomes. Unintended factors of noncompliance, such as a lack of knowledge or carelessness, caused the most severe negative impact on business process outcomes.},
   bibtex_show={true},
   category = {conference}
 }
@@ -1523,6 +1628,7 @@
   series   = {Lecture Notes in Computer Science},
   doi      = {10.1007/978-3-319-45348-4\_16},
   pdf      = {bpm-2016-vanderaa-dealing.pdf},
+  abstract = {Textual process descriptions are widely used in organizations since they can be created and understood by virtually everyone. The inherent ambiguity of natural language, however, impedes the automated analysis of textual process descriptions. While human readers can use their context knowledge to correctly understand statements with multiple possible interpretations, automated analysis techniques currently have to make assumptions about the correct meaning. As a result, automated analysis techniques are prone to draw incorrect conclusions about the correct execution of a process. To overcome this issue, we introduce the concept of a behavioral space as a means to deal with behavioral ambiguity in textual process descriptions. A behavioral space captures all possible interpretations of a textual process description in a systematic manner. Thus, it avoids the problem of focusing on a single interpretation. We use a compliance checking scenario and a quantitative evaluation with a set of of 47 textual process descriptions to demonstrate the usefulness of a behavioral space for reasoning about a process described by a text. Our evaluation demonstrates that a behavioral space strikes a balance between ignoring ambiguous statements and imposing fixed interpretations on them.},
   bibtex_show={true},
   category = {conference}
 }
@@ -1539,6 +1645,7 @@
   series   = {Lecture Notes in Business Information Processing},
   doi      = {10.1007/978-3-319-39429-9\_4},
   pdf      = {caise-2016-leopold-integrating.pdf},
+  abstract = {Documenting business processes using process models is common practice in many organizations. However, not all process information is best captured in process models. Hence, many organizations complement these models with textual descriptions that specify additional details. The problem with this supplementary use of textual descriptions is that existing techniques for automatically searching process repositories are limited to process models. They are not capable of taking the information from textual descriptions into account and, therefore, provide incomplete search results. In this paper, we address this problem and propose a technique that is capable of searching textual as well as model-based process descriptions. It automatically extracts process information from both descriptions types and stores it in a unified data format. An evaluation with a large Austrian bank demonstrates that the additional consideration of textual descriptions allows us to identify more relevant processes from a repository.},
   bibtex_show={true},
   category = {workshop}
 }
@@ -1555,6 +1662,7 @@
   series   = {Lecture Notes in Computer Science},
   doi      = {10.1007/978-3-319-39696-5\_33},
   pdf      = {caise-2016-vanderaa-narrowing.pdf},
+  abstract = {To determine whether strategic goals are met, organizations must monitor how their business processes perform. Process Performance Indicators (PPIs) are used to specify relevant performance requirements. The formulation of PPIs is typically a managerial concern. Therefore, considerable effort has to be invested to relate PPIs, described by management, to the exact operational and technical characteristics of business processes. This work presents an approach to support this task, which would otherwise be a laborious and time-consuming endeavor. The presented approach can automatically establish links between PPIs, as formulated in natural language, with operational details, as described in process models. To do so, we employ machine learning and natural language processing techniques. A quantitative evaluation on the basis of a collection of 173 real-world PPIs demonstrates that the proposed approach works well.},
   bibtex_show={true},
   category = {conference}
 }
@@ -1572,6 +1680,7 @@
   series   = {Lecture Notes in Computer Science},
   doi      = {10.1007/978-3-319-46397-1\_22},
   pdf      = {er-2016-kuss-probabilistic.pdf},
+  abstract = {Process model matching refers to the automatic identification of corresponding activities between two process models. It represents the basis for many advanced process model analysis techniques such as the identification of similar process parts or process model search. A central problem is how to evaluate the performance of process model matching techniques. Often, not even humans can agree on a set of correct correspondences. Current evaluation methods, however, require a binary gold standard, which clearly defines which correspondences are correct. The disadvantage of this evaluation method is that it does not take the true complexity of the matching problem into account and does not fairly assess the capabilities of a matching technique. In this paper, we propose a novel evaluation method for process model matching techniques. In particular, we build on the assessment of multiple annotators to define probabilistic notions of precision and recall. We use the dataset and the results of the Process Model Matching Contest 2015 to assess and compare our evaluation method. We find that our probabilistic evaluation method assigns different ranks to the matching techniques from the contest and allows to gain more detailed insights into their performance.},
   bibtex_show={true},
   category = {conference}
 }
@@ -1588,6 +1697,7 @@
   series   = {Lecture Notes in Computer Science},
   doi      = {10.1007/978-3-319-23063-4\_6},
   pdf      = {bpm-2015-vanderaa-detecting.pdf},
+  abstract = {Text-based and model-based process descriptions have their own particular strengths and, as such, appeal to different stakeholders. For this reason, it is not unusual to find within an organization descriptions of the same business processes in both modes. When considering that hundreds of such descriptions may be in use in a particular organization by dozens of people, using a variety of editors, there is a clear risk that such models become misaligned. To reduce the time and effort needed to repair such situations, this paper presents the first approach to automatically identify inconsistencies between a process model and a corresponding textual description. Our approach leverages natural language processing techniques to identify cases where the two process representations describe activities in different orders, as well as model activities that are missing from the textual description. A quantitative evaluation with 46 real-life model-text pairs demonstrates that our approach allows users to quickly and effectively identify those descriptions in a process repository that are inconsistent.},
   bibtex_show={true},
   category = {conference}
 }
@@ -1604,6 +1714,7 @@
   series   = {Lecture Notes in Business Information Processing},
   doi      = {10.1007/978-3-319-42887-1\_33},
   pdf      = {bpm-2015-vanderaa-integrated.pdf},
+  abstract = {While business process models have been proven to represent useful artifacts for organizations, they are not suitable to represent the detailed decision logic underlying processes. Ignoring this limitation often results in complex, spaghetti-like process models for workflows driven by data-based decisions. To avoid this, decision logic should be isolated from process logic, following a separation of concerns paradigm. To support this practice, we present an approach that automatically derives process models for which this paradigm applies. It takes as input structural dataflow relations underlying a workflow and produces a process model that emphasizes the most important decisions in a process, while detailed decision logic is outsourced to dedicated decision models.},
   bibtex_show={true},
   category = {workshop}
 }
@@ -1620,6 +1731,7 @@
   series   = {Lecture Notes in Business Information Processing},
   doi      = {10.1007/978-3-319-19237-6\_1},
   pdf      = {caise-2015-vanderaa-on.pdf},
+  abstract = {An organization’s knowledge on its business processes represents valuable corporate knowledge because it can be used to enhance the performance of these processes. In many organizations, documentation of process knowledge is scattered around various process information sources. Such information fragmentation poses considerable problems if, for example, stakeholders wish to develop a comprehensive understanding of their operations. The existence of efficient techniques to combine and integrate process information from different sources can therefore provide much value to an organization. In this work, we identify the general challenges that must be overcome to develop such techniques. This paper illustrates how these challenges should be and, to some extent, are being met in research. Based on these insights, we present three main frontiers that must be further expanded to successfully counter the fragmentation of process information in organizations.},
   bibtex_show={true},
   category = {workshop}
 }
@@ -1636,6 +1748,7 @@
   series   = {Lecture Notes in Computer Science},
   doi      = {10.1007/978-3-642-40176-3\_23},
   pdf      = {bpm-2013-vanderaa-composing.pdf},
+  abstract = {The proper composition of activities is important for the efficient execution of a workflow process. In this paper, an approach is presented that utilizes the data-flow underlying a workflow process to determine the importance and semantic relatedness of the various, elementary data-processing steps. Based on these aspects, fundamental guidelines are proposed to drive and objectify the task of activity composition in the context of workflow design.},
   bibtex_show={true},
   category = {conference}
 }
@@ -1654,6 +1767,7 @@
   year     = {2026},
   doi      = {10.1007/S44311-026-00056-6},
   pdf      = {procsci-2026-blumel-glitches.pdf},
+  abstract = {Business Process Simulation (BPS) is commonly used to conduct what-if analyses and assess the impact of changes to processes and their underlying information systems. In a typical data-driven BPS approach, a simulation model is derived from an event log and evaluated through a six-step method. However, following these steps can introduce systematic errors that potentially bias evaluation results and, thereby, lead to incorrect assessments of simulation model quality. To address this, we identify five systematic errors as threats to the internal validity of evaluation results, highlighting the problem and forming the central contribution of this paper. Through empirical examples, we demonstrate that these threats can distort evaluation outcomes, both individually and in combination, even when the same process and simulation model are applied. Building upon this analysis, we outline a conceptual framework that integrates these insights with established methods from related fields to guide mitigation of the identified threats. By recognizing the threats, we highlight how simulation accuracy 1 may be misjudged, and by proposing this framework, we enable more valid evaluations that better support decisions about redesigning business processes and information systems.},
   bibtex_show={true},
   category = {journal}
 }
@@ -1664,6 +1778,7 @@
   booktitle= {International Conference on Enterprise Design, Operations, and Computing (EDOC)},
   year     = {2026},
   pdf      = {edoc-2026-elyasi-qtab.pdf},
+  abstract = {Process-aware information systems support the execution and monitoring of business processes. The recorded event data can be leveraged to predict the remaining time of running cases, enabling organizations to meet service-level targets, and enhance operational performance. However, most existing approaches treat cases as being independent from each other, even though there often is contention between cases for shared resources. While some approaches account for inter-case dependencies, they overlook the queuing dynamics arising from work handovers between resources. Moreover, inter-case-aware approaches often use traditional tree-based models, which generally achieve lower accuracy than modern deep learning models. To overcome these limitations, we introduce QTab, a novel remaining time prediction approach powered by two components: (1) modeling of resource interactions and work handovers through a queuing network to derive informative inter-case features; (2) Modern tabular neural networks trained in sophisticated ensembling pipelines. Experimental results on eight real-world event logs show that QTab achieves competitive or superior predictive accuracy compared to existing tree-based and deep learning approaches in remaining time prediction. At the same time, it offers better scalability in feature extraction and improved efficiency in model training.},
   bibtex_show={true},
   category = {conference}
 }
@@ -1674,6 +1789,7 @@
   booktitle= {International Conference on Enterprise Design, Operations, and Computing (EDOC)},
   year     = {2026},
   pdf      = {edoc-2026-blumel-on.pdf},
+  abstract = {Business Process Simulation (BPS) and Predictive Process Monitoring (PPM) constitute the two primary techniques for forward-looking analysis in Business Process Management (BPM). While BPS enables counterfactual evaluation of alternative process configurations, PPM focuses on forecasting the evolution of ongoing process instances under the current process configuration. Although recent research increasingly combines both techniques, their integration remains conceptually fragmented and lacks a systematic synthesis, potentially obscuring opportunities to leverage their complementary strengths for advancing forward-looking BPM. To address this gap, this paper presents a structured literature review of 32 studies that integrate BPS and PPM. We analyze the identified studies along three perspectives: (i) the tasks addressed through integration, (ii) the conceptual integration patterns, that is, how both techniques are combined, and (iii) the resulting synergies. The review reveals that most existing approaches combine BPS and PPM asymmetrically and in a simulation-oriented manner, whereas tighter, decision-oriented couplings remain underexplored. Based on these findings, we derive a future research agenda that highlights how integration may help address known challenges of both techniques and outlines directions toward more adaptive and decision-oriented forward-looking BPM.},
   bibtex_show={true},
   category = {conference}
 }
@@ -1687,6 +1803,7 @@
   publisher= {{IEEE}},
   doi      = {10.1109/CAI68641.2026.11536232},
   pdf      = {cai-2026-acitelli-generating.pdf},
+  abstract = {The accuracy of automated planning tasks depends on the quality of the PDDL domains models used to represent them; however, manually developing these models is complex and prone to errors. While Large Language Models (LLMs) can process natural language (NL) descriptions of planning tasks, generating accurate and complete PDDL domains remains a significant challenge. In this paper, we propose a modular approach for constructing PDDL domains from NL descriptions through a series of structured extraction and refinement steps involving LLMs. Experiments with expert human evaluators and an LLM-as-a-judge on 30 benchmark planning tasks from the TEXT2WORLD dataset show that our approach generates syntactically correct and semantically coherent domains without the need for structured NL inputs, demonstrating its robustness and generality.},
   bibtex_show={true},
   category = {conference}
 }
@@ -1701,6 +1818,7 @@
   year     = {2021},
   doi      = {10.1007/978-3-030-81409-0_7},
   pdf      = {springer-2021-vanderaa-automatically.pdf},
+  abstract = {The general goal of automation is to relieve humans from repetitive and routine-like tasks. The positive effects of automation have been demonstrated in various contexts and range from efficiency gains to the reduction of errors. In this chapter, we focus on the automation of individual tasks in a process using so-called software robots, which is often referred to as robotic process automation (RPA). More specifically, we focus on the task of identifying suitable candidates for such automation efforts. In practice, this identification task is associated with substantial manual effort and, hence, is both time and cost intensive. Recognizing these issues, we consider how also the identification of automation candidates itself can be supported through automation. We particularly focus on the way in which natural language processing (NLP) may be employed for this purpose. We show how NLP techniques support the identification of automation candidates in widely used process representations, such as process models and textual process descriptions. As such, we demonstrate how tackling one of the key impediments to the adoption of RPA may be supported in an algorithmic and automated manner.},
   bibtex_show={true},
   category = {chapter}
 }
@@ -1715,6 +1833,7 @@
   year     = {2021},
   doi      = {10.1515/9783110676693-010},
   pdf      = {degruyter-2021-vanderaa-supporting.pdf},
+  abstract = {Natural Language Processing (NLP) is a field concerned with the analysis of natural language from a computational perspective. NLP techniques cover a wide range of tasks, such as information extraction, classification, and semantic analysis. As such, NLP has considerable potential to support Robotic Process Automation (RPA) efforts. In particular, we use this chapter to highlight selected opportunities where a successful application of NLP techniques can support various stages of the RPA lifecycle. Therefore, we consider the potential of NLP for the identification of RPA opportunities, the design of RPA routines, as well as their actual execution. We discuss how these opportunities can be supported through the application of existing techniques and, furthermore, highlight open research challenges.},
   bibtex_show={true},
   category = {chapter}
 }
@@ -1731,6 +1850,7 @@
   series   = {Lecture Notes in Business Information Processing},
   doi      = {10.1007/978-3-032-37877-4\_8},
   pdf      = {bpm-2026-dodangeh-making.pdf},
+  abstract = {Operating in dynamic and often unpredictable environments, business processes are exposed to changes that cause their execution to fluctuate over time. Since changes are inseparable parts of process execution, capturing them is crucial for gaining reliable insights into how they behave during their execution. Although prior research has studied continuous fluctuations of processes, most studies have focused primarily on visual representations of such changes. However, drawing more actionable insights requires a structured analysis approach that goes beyond visualization. To this end, this paper explores the potential of leveraging established time series analysis techniques—such as decomposition and correlation analysis—to derive meaningful insights into such changes. We evaluate our approach through backward-looking and forward-looking analysis: the former demonstrates the type of insights it can provide into continuous process dynamics by applying it to multiple event logs, while the latter examines whether the approach is beneficial for a downstream process mining task, the prediction of future process behavior.},
   bibtex_show={true},
   category = {workshop}
 }
@@ -1747,6 +1867,7 @@
   series   = {Lecture Notes in Business Information Processing},
   doi      = {10.1007/978-3-032-37877-4\_5},
   pdf      = {bpm-2026-blumel-simulation.pdf},
+  abstract = {Business process robustness describes a process’s ability to meet performance targets despite variations in parameters such as arrival rates or resource availability. Assessing business process robustness quantitatively is challenging because dependencies between process parameters and performance are complex and stochastic. Business process simulation avoids the need to specify those dependencies by simulating the process and observing the resulting behavior. However, the space of possible parameter combinations grows quickly, which makes it challenging to identify parameters that still meet the required performance targets. In this paper, we address this challenge by proposing a simulation-based approach that systematically explores parameter configurations to efficiently identify those that maintain acceptable performance. Our evaluation demonstrates that the proposed approach substantially reduces assessment complexity compared to our baselines while accurately identifying parameter combinations under which a process remains robust. The approach provides users with insights into how parameter variations influence performance, enabling a step toward a quantitative foundation for assessing and improving business process robustness.},
   bibtex_show={true},
   category = {workshop}
 }
@@ -1763,6 +1884,7 @@
   series   = {Lecture Notes in Business Information Processing},
   doi      = {10.1007/978-3-032-37877-4\_15},
   pdf      = {bpm-2026-urbano-visual.pdf},
+  abstract = {Data visualization plays a central role in process mining, particularly when analysts need to compare multiple process models, often representing different process variants, to assess changes, detect deviations, or benchmark performance. However, effectively supporting such comparative analysis remains challenging. To investigate this problem, we combine three perspectives: interviews with nine process mining analysts, established visual analytics principles, and an analysis of existing process mining visualizations. Based on this analysis, we identify key challenges for comparative analysis, including weak support for goal-driven analysis, insufficient scalability, and limited flexibility. Based on these insights, we propose an interactive approach for the flexible, scalable, and goal-driven comparison of multiple process models. The approach enables dynamic, goal-driven highlighting of differences and similarities, allowing analysts to tailor comparison based on specific analysis objectives. We developed a prototype implementing the main concepts and interaction mechanisms, and evaluated its perceived usefulness and usability through two workshops with a total of ten participants (students and experts). The results provide initial design insights for visual analytics techniques supporting process variant comparison and highlight directions for future research.},
   bibtex_show={true},
   category = {workshop}
 }

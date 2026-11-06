@@ -63,6 +63,11 @@
         {% include bib_periodical.liquid entry=entry %}
       </div>
 
+      {% if entry.award %}
+        <!-- Award (hidden "award" bib field), also listed under Distinctions on the publications page -->
+        <div class="award-line"><i class="fa-solid fa-trophy" aria-hidden="true"></i> {{ entry.award }}</div>
+      {% endif %}
+
       {% if entry.bibtex_show %}
         <!-- Hidden bibtex block -->
         <div class="bibtex hidden">

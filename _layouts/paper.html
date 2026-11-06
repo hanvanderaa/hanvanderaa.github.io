@@ -57,6 +57,10 @@ layout: default
       {% include bib_periodical.liquid entry=entry %}
     </p>
 
+    {% if entry.award %}
+      <p class="award-line"><i class="fa-solid fa-trophy" aria-hidden="true"></i> {{ entry.award }}</p>
+    {% endif %}
+
     <div class="paper-links">
       {% if entry.pdf %}
         {% if entry.pdf contains '://' %}

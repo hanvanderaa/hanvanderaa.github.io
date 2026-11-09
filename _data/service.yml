@@ -1,0 +1,162 @@
+# Scientific service, rendered as the second part of the CV page
+# (_includes/cv/service.liquid). "years" fills the date column; "past" items
+# are folded away behind a "Show N past …" toggle.
+
+organization:
+  current:
+    - years: "2027"
+      role: Program Chair
+      venue: International Conference on Business Process Management (BPM)
+      title: BPM 2027, Leuven
+      url: https://bpm2027leuven.org/conference-chairs/
+    - years: "2027"
+      role: Organizer
+      venue: Dagstuhl Seminar 27061
+      title: Blending Knowledge Graphs and Process Mining for Procedural Knowledge Management
+      url: https://www.dagstuhl.de/27061
+    - years: "2025 – now"
+      role: Steering Committee member
+      venue: EMISA
+  past:
+    - years: "2023 – 2026"
+      role: Organizer
+      venue: Working Conference on Business Process Modeling, Development and Support (BPMDS)
+      url: https://sites.google.com/view/bpmds
+    - years: "2025"
+      role: Workshop Chair
+      venue: International Conference on Business Process Management (BPM)
+      url: https://bpm2025seville.org/conference/chairs
+    - years: "2022 – 2025"
+      role: Mini-track Chair
+      venue: Hawaii International Conference on System Sciences (HICSS)
+    - years: "2024"
+      role: Doctoral Consortium Chair
+      venue: International Conference on Process Mining (ICPM)
+      url: https://icpmconference.org/2024/doctoral-consortium-call-for-proposals
+    - years: "2024"
+      role: Doctoral Consortium Chair
+      venue: International Conference on Business Process Management (BPM)
+      url: https://bpm2024.agh.edu.pl/call-for-doctoral-consortium/
+    - years: "2022 – 2024"
+      role: Organizer
+      venue: Workshop on Natural Language Processing for Business Process Management (NLP4BPM)
+      url: https://sites.google.com/view/nlp4bpmworkshop
+    - years: "2022"
+      role: Organizer
+      venue: 1st Process Analytics Research Seminar (PARS)
+
+program_committees:
+  current:
+    - years: "2023 – now"
+      role: PC member
+      venue: Int. Conf. on Advanced Information Systems Engineering (CAiSE)
+    - years: "2021 – now"
+      role: PC member
+      venue: Int. Conf. on Process Mining (ICPM)
+  past:
+    - years: "2025 – 2026"
+      role: Senior PC member
+      venue: Int. Conf. on Business Process Management (BPM)
+    - years: "2020 – 2024"
+      role: PC member
+      venue: Int. Conf. on Business Process Management (BPM)
+    - years: "2022 – 2023"
+      role: PC member
+      venue: Int. Conf. on Cooperative Information Systems (CoopIS)
+    - years: "2021 – 2022"
+      role: PC member
+      venue: Int. Conf. on Distributed and Event-Based Systems (DEBS)
+    - years: "2019 – 2022"
+      role: PC member
+      venue: Working Conf. on Business Process Modeling, Development, and Support (BPMDS)
+    - years: "2020"
+      role: PC member
+      venue: Int. Joint Conf. on Neural Networks (IJCNN)
+
+editorial:
+  current:
+    - years: in progress
+      role: Guest Editor
+      venue: Process Science
+      title: Best Process Science Conference Papers 2026
+  past:
+    - years: "2025"
+      role: Guest Editor
+      venue: Process Science
+      title: Best Process Science Conference Papers 2025
+      url: https://link.springer.com/collections/fcbfjejcab
+    - years: "2025"
+      role: Guest Editor
+      venue: Business & Information Systems Engineering
+      title: Special Issue on Exploring the (Mis)Match Between Real-World Processes and Event Data
+      url: https://link.springer.com/article/10.1007/s12599-025-00939-1#article-info
+    - years: "2025"
+      role: Guest Editor
+      venue: Software and Systems Modeling
+      title: Special Issue of selected papers of the BPMDS Working Conference 2024
+      url: https://link.springer.com/article/10.1007/s10270-025-01347-5
+    - years: "2024"
+      role: Guest Editor
+      venue: Software and Systems Modeling
+      title: Special Issue of selected papers of the BPMDS Working Conference 2023
+      url: https://link.springer.com/article/10.1007/s10270-024-01248-z
+
+reviewing:
+  journals:
+    - ACM Transactions on the Web
+    - Advanced Engineering Informatics
+    - Artificial Intelligence in Medicine
+    - Business & Information Systems Engineering
+    - Computer Science Review
+    - Computer Standards & Interfaces
+    - Computers in Industry
+    - Computing
+    - Data Mining and Knowledge Discovery
+    - Decision Support Systems
+    - Expert Systems with Applications
+    - IEEE Transactions on Knowledge and Data Engineering
+    - IEEE Transactions on Services Computing
+    - Information Systems
+    - Journal of Biomedical Informatics
+    - "Journal of Software: Evolution and Process"
+    - Journal on Data Semantics
+    - Process Science
+    - Requirements Engineering
+    - SN Business & Economics
+    - Software and Systems Modeling
+  conferences:
+    - years: "2023"
+      venue: International Conference on Very Large Data Bases (VLDB)
+    - years: "2018 – 2023"
+      venue: European Conference on Information Systems (ECIS)
+    - years: "2017, 2022"
+      venue: Wirtschaftsinformatik (WI)
+    - years: "2021"
+      venue: Hawaii International Conference on System Sciences (HICSS)
+    - years: "2015, 2017"
+      venue: Business Process Modeling, Development, and Support (BPMDS)
+    - years: "2017"
+      venue: Americas Conference on Information Systems (AMCIS)
+    - years: "2017"
+      venue: ACM Symposium on Applied Computing (SAC)
+    - years: "2016"
+      venue: International Conference on Business Process Management (BPM)
+    - years: "2015 – 2016"
+      venue: International Conference on Service Oriented Computing (ICSOC)
+  funding_agencies:
+    - German Research Foundation (DFG)
+    - Swiss National Science Foundation (SNSF)
+
+tutorials:
+  - years: "2024"
+    title: Privacy-Aware Analysis based on Data Series
+    venue: IEEE Int. Conf. on Data Engineering (Utrecht, The Netherlands)
+  - years: "2023"
+    title: Natural Language Processing for Business Process Analysis
+    venue: Int. Conf. on Business Process Management (Utrecht, The Netherlands)
+  - years: "2021"
+    title: "RuM: Declarative Process Mining, Distilled"
+    venue: Int. Conf. on Business Process Management (Rome, Italy)
+  - years: "2019"
+    title: "Process Mining: Leveraging Event Data to Understand and Improve Organizations"
+    venue: IEEE Big Data (Los Angeles, USA)

@@ -1,0 +1,35 @@
+{% comment %}
+  Compact one-line rows for the Scientific service part of the CV
+  (_includes/cv/service.liquid): the same date column as the career entries,
+  then "<role>, <venue>[: <title>]", "<title>" with "<venue>" on the next line or just "<venue>".
+  A row's url links its title, or its venue when it has no title.
+  Pass the rows as rows=.
+{% endcomment %}
+{% for row in include.rows %}
+  <li class="cv-compact-row">
+    <span class="cv-entry-date">{{ row.years }}</span>
+    <span class="cv-compact-body">
+      {%- if row.role -%}
+        <strong>{{ row.role }}</strong>,
+        {% if row.url and row.title == null -%}
+          <a href="{{ row.url }}">{{ row.venue }}</a>
+        {%- else -%}
+          {{- row.venue -}}
+        {%- endif %}
+        {%- if row.title -%}
+          :
+          {% if row.url -%}
+            <a href="{{ row.url }}">{{ row.title }}</a>
+          {%- else -%}
+            {{- row.title -}}
+          {%- endif %}
+        {%- endif -%}
+      {%- elsif row.title -%}
+        <em>{{ row.title }}</em><br>
+        {{ row.venue }}
+      {%- else -%}
+        {{ row.venue }}
+      {%- endif -%}
+    </span>
+  </li>
+{% endfor %}

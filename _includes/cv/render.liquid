@@ -1,8 +1,10 @@
 {% comment %}
   Unified CV layout that handles both RenderCV (YAML) and JSONResume (JSON) formats
   Site override of al_folio_cv's templates/cv/render.liquid:
-  - Adds a top anchor-link nav bar (like the activities/publications pages)
-    listing only the sections that actually have content
+  - Splits the page into two parts, "Academic career" (the sections from
+    _data/cv.yml) and "Scientific service" (_data/service.yml, rendered by
+    cv/service.liquid), each with its own line in a top anchor-link nav that
+    lists only the career sections that actually have content
   - Hides empty sections in the generic RenderCV section loop instead of
     rendering an empty card
   - Drops the "Professional Title" row is handled by leaving cv.label
@@ -62,77 +64,45 @@
         {% assign vol = cv.sections.Volunteer | default: empty_array %}
         {% assign combined_experience = exp | concat: vol %}
         {% assign nav_started = false %}
-        <p class="cv-nav">
-          {% if cv.name or cv.label or cv.location or cv.email or cv.phone or cv.website %}
-            {% assign nav_started = true %}
-            <a href="#contact-information">Contact Information</a>
+        <nav class="cv-nav" aria-label="CV sections">
+          <p>
+            <a class="cv-nav-part" href="#academic-career">Academic career</a>
+            <span class="cv-nav-dash">&mdash;</span>
+            <span class="cv-nav-links">
+              {% if combined_experience.size > 0 %}
+                {% if nav_started %} &middot; {% endif %}
+                {% assign nav_started = true %}
+                <a href="#experience">Experience</a>
+              {% endif %}
+              {% for section_pair in cv.sections %}
+                {% assign section_title = section_pair[0] %}
+                {% assign section_entries = section_pair[1] %}
+                {% if section_title == 'Experience' or section_title == 'Volunteer' %}
+                  {% continue %}
+                {% endif %}
+                {% if section_entries.size > 0 %}
+                  {% if nav_started %} &middot; {% endif %}
+                  {% assign nav_started = true %}
+                  <a href="#{{ section_title | slugify }}">{{ section_title }}</a>
+                {% endif %}
+              {% endfor %}
+            </span>
+          </p>
+          {% if site.data.service %}
+            <p>
+              <a class="cv-nav-part" href="#scientific-service">Scientific service</a>
+              <span class="cv-nav-dash">&mdash;</span>
+              <span class="cv-nav-links"
+                ><a href="#organization">Organizational Roles</a> &middot; <a href="#editorial">Editorial Roles</a> &middot;
+                <a href="#program-committees">Conference Program Committees</a> &middot; <a href="#reviewing">Reviewing</a> &middot;
+                <a href="#tutorials">Tutorials</a></span
+              >
+            </p>
           {% endif %}
-          {% if combined_experience.size > 0 %}
-            {% if nav_started %} &middot; {% endif %}
-            {% assign nav_started = true %}
-            <a href="#experience">Experience</a>
-          {% endif %}
-          {% for section_pair in cv.sections %}
-            {% assign section_title = section_pair[0] %}
-            {% assign section_entries = section_pair[1] %}
-            {% if section_title == 'Experience' or section_title == 'Volunteer' %}
-              {% continue %}
-            {% endif %}
-            {% if section_entries.size > 0 %}
-              {% if nav_started %} &middot; {% endif %}
-              {% assign nav_started = true %}
-              <a href="#{{ section_title | slugify }}">{{ section_title }}</a>
-            {% endif %}
-          {% endfor %}
-        </p>
+        </nav>
 
-        <!-- Header/Contact Information -->
-        {% if cv.name or cv.label or cv.location or cv.email or cv.phone or cv.website %}
-          <a class="anchor" id="contact-information"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Contact Information</h3>
-            <table class="table table-cv table-sm table-borderless">
-              {% if cv.name %}
-                <tr>
-                  <td class="p-1 pr-2 font-weight-bold"><b>Name</b></td>
-                  <td class="p-1 pl-2 font-weight-light">{{ cv.name }}</td>
-                </tr>
-              {% endif %}
-              {% if cv.email %}
-                <tr>
-                  <td class="p-1 pr-2 font-weight-bold"><b>Email</b></td>
-                  <td class="p-1 pl-2 font-weight-light">{{ cv.email }}</td>
-                </tr>
-              {% endif %}
-              {% if cv.phone %}
-                <tr>
-                  <td class="p-1 pr-2 font-weight-bold"><b>Phone</b></td>
-                  <td class="p-1 pl-2 font-weight-light">{{ cv.phone }}</td>
-                </tr>
-              {% endif %}
-              {% if cv.address %}
-                <tr>
-                  <td class="p-1 pr-2 font-weight-bold"><b>Location</b></td>
-                  <td class="p-1 pl-2 font-weight-light">
-                    {% if cv.address.street %}{{ cv.address.street }}, {% endif %}
-                    {% if cv.address.city %}{{ cv.address.city }}, {% endif %}
-                    {% if cv.address.region %}{{ cv.address.region }} {% endif %}
-                    {% if cv.address.postalCode %}{{ cv.address.postalCode }}{% endif %}
-                    {% if cv.address.country %}, {{ cv.address.country }}{% endif %}
-                  </td>
-                </tr>
-              {% endif %}
-              {% if cv.website %}
-                <tr>
-                  <td class="p-1 pr-2 font-weight-bold"><b>Website</b></td>
-                  <td class="p-1 pl-2 font-weight-light">
-                    <a href="{{ cv.website }}" target="_blank">{{ cv.website }}</a>
-                  </td>
-                </tr>
-              {% endif %}
-            </table>
-          </div>
-        {% endif %}
+        <!-- Part 1: academic career (from _data/cv.yml) -->
+        <h2 class="cv-part" id="academic-career">Academic career</h2>
 
         <!-- Summary -->
         {% if cv.summary != blank %}
@@ -214,6 +184,12 @@
             </div>
           {% endif %}
         {% endfor %}
+
+        <!-- Part 2: scientific service (from _data/service.yml) -->
+        {% if site.data.service %}
+          <h2 class="cv-part" id="scientific-service">Scientific service</h2>
+          {% include cv/service.liquid %}
+        {% endif %}
 
       {% elsif render_jsonresume and site.data.resume %}
         {% comment %} JSONResume format {% endcomment %}

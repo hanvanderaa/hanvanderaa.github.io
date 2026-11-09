@@ -4,7 +4,7 @@ title: etymology
 display_title: Etymology
 permalink: /etymology/
 nav: true
-nav_order: 5
+nav_order: 6
 _styles: >
   .etymology-map {
     width: 100%;

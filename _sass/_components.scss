@@ -210,8 +210,167 @@ ul.task-list input[type="checkbox"] {
     }
   }
 
+  // Two-line jump nav, one line per part of the page ("Academic career",
+  // "Scientific service"), each starting with the part's name.
+  // Two lines ("part — sections"); a shared grid lines up the dashes and
+  // the first section of each line.
   .cv-nav {
+    display: grid;
+    grid-template-columns: max-content max-content 1fr;
+    column-gap: 0.5rem;
+    row-gap: 0.25rem;
+    align-items: baseline;
     margin-bottom: 1.5rem;
+
+    p {
+      display: contents;
+    }
+
+    .cv-nav-links a {
+      white-space: nowrap;
+    }
+
+    .cv-nav-part {
+      color: var(--global-text-color);
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+  }
+
+  // Part heading above each group of cards.
+  h2.cv-part {
+    max-width: 750px;
+    margin: 2.5rem auto 0;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--global-text-color-light);
+  }
+
+  // Scientific service: compact one-line rows sharing the career entries'
+  // date column (.cv-entry-date), with past items folded in <details>.
+  ul.cv-compact {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .cv-compact-row {
+    display: flex;
+    align-items: baseline;
+    padding: 0.2rem 0;
+    font-weight: 300;
+    line-height: 1.45;
+
+    // Left-aligned, tabular figures: single years, ranges and lists of
+    // years share one left edge instead of each being centred differently.
+    .cv-entry-date {
+      flex: 0 0 6rem;
+      margin-right: 1rem;
+      text-align: left;
+      font-variant-numeric: tabular-nums;
+      color: var(--global-text-color-light);
+      white-space: nowrap;
+    }
+
+    @media (max-width: 576px) {
+      .cv-entry-date {
+        flex-basis: 4.5rem;
+        margin-right: 0.5rem;
+        font-size: 0.85rem;
+        white-space: normal;
+      }
+    }
+
+    .cv-compact-body {
+      flex: 1;
+      min-width: 0;
+
+      strong {
+        font-weight: 500;
+      }
+    }
+  }
+
+  details.cv-past {
+    summary {
+      display: inline-block;
+      margin: 0.25rem 0 0 7rem;
+      cursor: pointer;
+
+      @media (max-width: 576px) {
+        margin-left: 5rem;
+      }
+
+      span {
+        color: var(--global-theme-color);
+        font-size: 0.9rem;
+      }
+
+      .cv-past-show::after {
+        content: " \25BE";
+      }
+
+      .cv-past-hide::after {
+        content: " \25B4";
+      }
+    }
+
+    .cv-past-hide {
+      display: none;
+    }
+
+    &[open] {
+      .cv-past-show {
+        display: none;
+      }
+
+      .cv-past-hide {
+        display: inline;
+      }
+
+      ul.cv-compact {
+        margin-top: 0.25rem;
+        padding-top: 0.25rem;
+        border-top: 1px dashed var(--global-divider-color);
+      }
+
+      .cv-compact-body {
+        color: var(--global-text-color-light);
+      }
+    }
+  }
+
+  h4.cv-subheading {
+    margin: 0.75rem 0 0.4rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--global-text-color-light);
+  }
+
+  ul.cv-columns {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.15rem 1.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0.9rem;
+    font-weight: 300;
+
+    @media (max-width: 576px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .cv-inline {
+    margin: 0;
+    font-weight: 300;
   }
 }
 

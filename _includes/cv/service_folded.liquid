@@ -1,0 +1,25 @@
+{% comment %}
+  A Scientific service card whose past items fold away (_includes/cv/service.liquid).
+  Pass id=, title=, section= (with current and past rows) and noun= ("past roles").
+{% endcomment %}
+<a class="anchor" id="{{ include.id }}"></a>
+<div class="card mt-3 p-3">
+  <h3 class="card-title font-weight-medium">{{ include.title }}</h3>
+  <ul class="cv-compact">
+    {% include cv/service_rows.liquid rows=include.section.current %}
+  </ul>
+  {% if include.section.past.size > 0 %}
+    <details class="cv-past">
+      <summary>
+        <span class="cv-past-show"
+          >Show {{ include.section.past.size }}
+          {{ include.noun -}}
+        </span>
+        <span class="cv-past-hide">Hide {{ include.noun }}</span>
+      </summary>
+      <ul class="cv-compact">
+        {% include cv/service_rows.liquid rows=include.section.past %}
+      </ul>
+    </details>
+  {% endif %}
+</div>

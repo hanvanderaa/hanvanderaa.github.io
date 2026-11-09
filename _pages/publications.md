@@ -69,7 +69,7 @@ nav_order: 1
 
 <h3>Other awards</h3>
 <ul>
-  <li><strong>Best reviewer award (ICPM 2023):</strong> Best reviewer at the International Conference on Process Mining</li>
+  <li><strong>Best reviewer award (ICPM 2023)</strong></li>
   <li><strong>Runner-up best dissertation award (BPM 2018)</strong></li>
 </ul>
 

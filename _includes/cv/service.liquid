@@ -1,0 +1,37 @@
+{% comment %}
+  Second part of the CV page, "Scientific service", from _data/service.yml.
+  Same cards as the career part, but with compact one-line rows; the past
+  items of a section fold away in a <details> element.
+{% endcomment %}
+{% assign service = site.data.service %}
+
+{% include cv/service_folded.liquid id='organization' title='Organizational Roles' section=service.organization noun='past roles' %}
+
+{% include cv/service_folded.liquid id='editorial' title='Editorial Roles' section=service.editorial noun='past roles' %}
+
+{% include cv/service_folded.liquid id='program-committees' title='Conference Program Committees' section=service.program_committees noun='past committees' %}
+
+<a class="anchor" id="reviewing"></a>
+<div class="card mt-3 p-3">
+  <h3 class="card-title font-weight-medium">Reviewing</h3>
+  <h4 class="cv-subheading">Conferences</h4>
+  <ul class="cv-compact">
+    {% include cv/service_rows.liquid rows=service.reviewing.conferences %}
+  </ul>
+  <h4 class="cv-subheading">Journals</h4>
+  <ul class="cv-columns">
+    {% for journal in service.reviewing.journals %}
+      <li>{{ journal }}</li>
+    {% endfor %}
+  </ul>
+  <h4 class="cv-subheading">Funding agencies</h4>
+  <p class="cv-inline">{{ service.reviewing.funding_agencies | join: ' &middot; ' }}</p>
+</div>
+
+<a class="anchor" id="tutorials"></a>
+<div class="card mt-3 p-3">
+  <h3 class="card-title font-weight-medium">Tutorials</h3>
+  <ul class="cv-compact">
+    {% include cv/service_rows.liquid rows=service.tutorials %}
+  </ul>
+</div>
